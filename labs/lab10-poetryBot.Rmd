@@ -1,0 +1,300 @@
+---
+title: "Programming Literary Bots"
+author: "Ryan Cordell"
+date: "2018-03-30"
+output: html_document
+---
+
+## Acknowledgements
+
+This version of my twitterbot assignment was adapted from [an original written in Python](https://www.dropbox.com/s/r1py3zazde2turk/Trendingmore.py?dl=0), which itself adapted code written by Mark Sample. That orginal bot tweeted (I've since stopped it) at [Quoth the Ravbot](https://twitter.com/Quoth__the). The current version owes much to advice and code borrowed from two colleagues at Northeastern University: Jonathan Fitzgerald and Benjamin Schmidt. 
+
+
+## Preparing to work
+
+This assignment requires a number of R packages for data analysis and manipulation, as well as for importing data from external sources such as Project Gutenberg, Wordnik, and Twitter. The code below will load the necessary packages if you have them installed in RStudio. If not, you will need to first install them using the code `install.packages("packageTitleHere")`. 
+
+```{r}
+library(tidytext)
+library(tidyverse)
+library(gutenbergr)
+library(tokenizers)
+library(twitteR)
+library(birdnik)
+```
+
+## Why Write Literary Bots?
+
+At this point we all know about bots on Twitter. In fact, Twitter [stopped tallying the number of bots in its service a few years ago](https://www.buzzfeed.com/williamalden/twitter-has-stopped-updating-its-public-tally-of-bots), but estimates suggest a large proportion of twitter accounts are automated. Many of these are designed to push particular viewpoints or harrass particular users, though recently folks have started building bots [to push back against online abuse](https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/17/this-researcher-programmed-bots-to-fight-racism-on-twitter-it-worked/).
+
+In [the midst of all these wilds](http://lithub.com/encountering-literary-bots-in-the-wilds-of-twitter/), why do I teach students to build literary bots in Technologies of Text? Well: on the one hand, it's a lot of fun, *and* it can help us understand more about coding in R, working with APIs (application programming interfaces), and the hidden workings of web services like Twitter. More than that, however, building bots offers a way of seeing literary objects anew and engaging creatively, [provocatively, or even combatively](https://medium.com/@samplereality/a-protest-bot-is-a-bot-so-specific-you-cant-mistake-it-for-bullshit-90fe10b7fbaa) with digital objects and online culture. Breaking down a poem for "mad libs" word substitution, for instance, forces us to think about the building blocks of poems, while generating "random walks" that imitate particular authors helps us see their style slant.
+
+## Remixing Moby Dick
+
+You have probably at some point thought at least a little about the predictive text feature on your phones: or laughed at the predictions it sometimes makes! In this section, we are going to download a novel from Project Gutenberg and use the words in it to build a simple "random walk" generator. Essentially, the generator will calculate the likelyhood, within the strings of words in your source text, that one word follows another. It will then produce text sequences based on whatever "seed" word we provide (*provided* that seed word can be found in the source text). What emerges may be nonesense or it may be found eloquence, but either way it will help us think about the characteristics of a chosen writer. When the machine learns from a novel by, say, Herman Melville, what will it predict about the order and operations of language?
+
+First, then, we need to import a source text. The code below imports a .txt file from Project Gutenberg and uses the `gutenbergr` package to clean it up by removing the boilerplate from the beginning and end of the novel and also removing any blank lines. 
+
+```{r}
+moby <- gutenberg_download(gutenberg_works(title == "Moby Dick")) %>%
+  gutenberg_strip() %>%
+  filter(text != "")
+```
+
+Now that we have a source text, the code below *tokenizes* the words (remember our text mining exercises from the past few classes). It then creates two columns, one for each word and another for the word immediately following. 
+
+```{r}
+mobywords <- moby$text %>% 
+  tokenize_words() %>%
+  unlist() %>%
+  tibble(word = .) %>%
+  mutate(word2 = lead(word,1))
+View(mobywords)
+```
+
+The code below takes that long list of paired words and looks across all the pairs to calculate the likelihood of each pair. So if "nine lives" appeared three times and "wine lives" appeared once, the likelihood of "lives" following "nine" would be .75 and the likelihood of "lives" following "wine" would be .25. Of course, this script is only making these calculations based on its corpus—which in our case is within a single book—so we should not expect this to be a statistical representation of the language itself. Plus there are lots of single pairs—sets of words that only appear together once—which will thus be assigned a likelihood of 1. SO think of this as a fun experiment in remixing *Moby Dick*; were we to attempt to write a predictive language model for all nineteenth-century fiction, we would need a significantly more sophsiticated method. 
+
+```{r}
+transitions <- mobywords %>% 
+  group_by(word) %>% 
+  mutate(word1Count=n()) %>% 
+  group_by(word,word2) %>% 
+  summarize(chance = n()/word1Count[1])
+View(transitions)
+```
+
+We are creating a new dataframe with a new variable, `word1Count`, which is a count of the number of times a word appears in our data. If you were to run the code only as far as this, you would see, for example, that the word "CITATION" appears 100 times, once at the top of each text. From there, however, we group by both the first word and the second word and calculate the chance that the second word will follow the first.
+
+Next we create a function that uses the `chance` variable we created above to randomly select a next word based on the probability that it will follow the previous word. 
+
+```{r}
+findNextWord = function(current) {
+  subset = transitions %>% filter(word==current)
+  nextWord = sample(subset$word2,1,prob = subset$chance)
+}
+```
+
+Finally, set a seed word (remember to make it lower case!) and run the function, after which you will see the console begin printing out words that should, if this is working right, make some logical sense (though the logic breaks down after a while). Try it out. Let it run for awhile and then hit the "stop" button above the console to stop it running. Then review what it produced: how well does your random generator imitate the source writer?
+
+```{r}
+# you can use this code to get a randomly sampled seedword from the `mobywords` dataframe. Each time you run `sample` it will retrieve a new, random word.
+word <- sample(mobywords$word, 1)
+
+# OR, you can use this code to set the seed word to the specific word you want. If that word isn't in `mobywords` (i.e. it doesn't appear in *Moby Dick*, in this instance) then it won't work
+
+word <- "hark"
+
+while(TRUE) {
+  if (is.na(word)) {
+    break
+  }
+  message(word)
+  word = findNextWord(word)
+}
+```
+
+We could use these random walks to create a twitter bot, following the directions I will outline below. You'd just need to write a modification limiting the walk to fewer than 280 characters.
+
+
+## Markov Chains
+
+The following section works with [a function written by Benjamin Schmidt](http://bostonography.benschmidt.org/?page_id=211) that creates a [Markov chain](https://en.wikipedia.org/wiki/Markov_chain), a more sophisticated version of what we created above. We won't necessarily work through this code line by line, but I wanted you to see it. It takes two arguments: text you've read in, the *level* of the Markov chain, and the seed word. Those are the only three things you might need to change about the code below; otherwise you can simply run it and compare its output with our random walk generator above. 
+
+```{r}
+
+markov_generator_generator = function(filename, n) {
+  labels = paste("word",1:n,sep="")
+  ngrams = 
+    read_table(filename,col_names="text") %>%
+    mutate(text = gsub("[0-9]","",text)) %>% # <- This is what you add. 
+    filter(!is.na(text)) %>%
+    unnest_tokens(ngram,text,token="ngrams",n=n) %>% 
+    separate(ngram,labels," ") %>%
+    group_by_(.dots=labels) %>%
+    summarize(count=n()) %>%
+    ungroup
+  next_word = function(seed) {
+    tail = rev(seed)[1:(n-1)]
+    names(tail) = paste0("word",(n-1):1)
+    tail = as.data.frame(as.list(tail),stringsAsFactors=F)
+    tail = tail[,!is.na(tail[1,]),drop=F]
+    next_up = ngrams %>% 
+      inner_join(tail) %>% suppressMessages %>%
+      sample_n(1, weight=count) %>% 
+      select(n) %>% unlist %>% unname
+    return(c(seed,next_up)) 
+  }
+  generate_list = function(seed,n=20) {
+    if (!is.character(seed)) {stop("You must supply a vector of words")}
+    for (i in 1:n) {
+      seed = next_word(seed)
+    }
+    seed
+  }
+}
+
+```
+
+The code below reads in a specific text file. You could change this if you'd like to see a chain generated from something other than *Moby Dick*. 
+
+```{r}
+book <- gutenberg_download(gutenberg_works(title == "Moby Dick")) %>%
+  gutenberg_strip() %>%
+  filter(text != "") %>%
+  summarise(text = paste(text, collapse = " "))
+
+generator <-
+  markov_generator_generator(book$text,n = 3)
+set.seed(33)
+generator(c("i"),64)
+```
+
+You could run this code, replacing the book URL with another, if you'd like to see a chain generated from something other than *Moby Dick*. 
+
+```{r}
+generator <-
+  markov_generator_generator("http://www.gutenberg.org/files/2701/2701-0.txt",n = 3)
+set.seed(33)
+generator(c("i"),64)
+```
+
+Finally, you can use the generator you just created to make a chain, either by manually entering a starting word (which again, must be present in the text):
+
+```{r}
+set.seed(33)
+generator("hark",24)
+```
+
+Or you could grab a random sample `mobywords`:
+```{r}
+set.seed(33)
+generator(c(sample(mobywords$word, 1)),28)
+```
+
+
+## Mad-Lib Poetry Bot
+
+Finally, we will learn to write at least one kind of twitterbot: a "mad libs" style bot that takes a predefined text—in our case, a snippet of nineteenth-century poetry—and substitutes random words based on their parts of speech. As above, the results are sometimes nonsense, sometimes unexpectedly apt, and sometimes amusingly absurd. 
+
+In order to complete this section, you’ll need to create a few accounts from which we’ll either be drawing or to which we’ll be adding content:
+
++ Sign up for [a Wordnik account](https://www.wordnik.com/signup) and then [sign up for a Wordnik API Key](http://developer.wordnik.com/). Wordnik is an open-source dictionary from which we will be drawing words to fill in our mad libs.
++ If you want to post to Twitter, you will need to create a new Twitter account for your bot. Think about what kind of bot you want to make and then sign up. Be sure to add a mobile number to the account, as we’ll need that for one the steps later on.
++ While signed into your new account, visit [Twitter’s developer site](https://dev.twitter.com/). In the small bottom menu click “Manage Your Apps” and then “Create New App.” Fill out the required fields and then click “Create Your Twitter Application.” In your new app, navigate to “Permissions,” select “Read and Write,” and save settings. We’ll be getting some essential information from the “Keys and Access Tokens” menu shortly.
+
+The examples below all use this stanza from Edgar Allan Poe's "The Raven," which works well for this kind of word-substitution experiment, but you could try with your own poem once you understand the basic principles of the word substitution.
+
+“Be that word our sign of parting, bird or fiend!” I shrieked, upstarting— 
+“Get thee back into the tempest and the Night’s Plutonian shore! 
+     Leave no black plume as a token of that lie thy soul hath spoken! 
+     Leave my loneliness unbroken!—quit the bust above my door! 
+ Take thy beak from out my heart, and take thy form from off my door!” 
+             Quoth the Raven “Nevermore.”
+             
+We begin with a function, also adapted slightly from [one written by Benjamin Schmidt](https://gist.github.com/bmschmidt/2c270ab7b373b6b4383a603afe828a48), that will help us call words of specific types from the Wordnik online dictionary. You will enter your own Wordnik key in the `my_wordnik_key` line below:
+
+```{r}
+my_wordnik_key <- "YOUR_API_KEY_GOES_HERE"
+
+#the line below will set the "default" part of speech for your calls to Wordnik, but you will be able to override this setting in later code.
+wordnik_pos = "adjective"
+
+#
+random_word <- function(key=my_wordnik_key,
+                        pos=wordnik_pos, min_count=100, n=1,
+                        min_length = 5, max_length = 10){
+  
+  param <- paste0("words.json/randomWords?hasDictionaryDef=true",
+                  "&minCorpusCount=",min_count,
+                  "&minLength=",min_length,
+                  "&maxLength=",max_length,
+                  "&limit=",n,
+                  "&includePartOfSpeech=",pos)
+
+  raw = birdnik:::query(key = key,params = param)
+  do.call(rbind,lapply(raw,as.data.frame))
+  
+}
+```
+
+This function can be invoked via the following code; you can change the part of speech and the number of words to pull as you wish. By default the function creates a dataframe with Wordnik's word ids in the first variable column and the words themselves as the second. 
+
+```{r}
+random_word(pos="verb",n=5, min_count=1000)
+random_word(pos="interjection",n=10, min_count=100)
+```
+
+Those dataframes aren't quite what we will want for making substitutions in our mad-lib poem, so I've written an additional function that calls Ben's function with some specific parameters (only 1 word), grabs only the second column from the dataframe generated in `random_word`, and converts that data to a character string. To grab a random word of a given part of speech, you simply need to invoke the function `poem_word()` and put the part of speech you're looking for in quotes inside the parentheses. There are a number of options for the part of speech, but you'll primarily use `verb`, `noun`, `pronoun`, `adjective`, `adverb`, `interjection`, and `preposition`. For other possibilities, consult [the documentation for the Wordnik API](http://developer.wordnik.com/docs.html#!/words/getRandomWord_get_4). 
+
+```{r}
+
+poem_word <- function(x) {
+  random_word(pos=x,n=1,min_count=1000)[,2] %>%
+    as.character()
+}
+
+poem_word("interjection")
+```
+
+
+Now we will use the `poem_word()` function to call words into specific places in our poem and *concatenate*, or combine, them with the parts of the poem we are leaving as originally written. Take a look at how this concatenation is structured below. When concatenating character strings, R combines precisely the strings it is given, meaning you must explicitly add spaces to the strings (within the quotation marks) where you want them to appear in the final output. To see the output of this code, run the line `cat(poem)`; the mad-lib poem will appear in your console.
+
+```{r}
+poem <- paste(c(poem_word("verb"), " thy ", poem_word("noun"), " from ", poem_word("preposition")," my ", poem_word("noun"), ", and ", poem_word("verb"), " thy ", poem_word("noun"), " from ", poem_word("preposition"), " my ", poem_word("noun"), "! \nQuoth the Ravbot, '", poem_word("interjection"), "!'"), collapse = "")
+
+cat(poem)
+
+```
+
+### Tweet, tweet
+
+Now let's introduce Twitter into the mix by using its API to grab a random trending hashtag and insert it into our poem. You will need the consumer key, consumer secret, access token, and access secret from the Twitter application you set up in order to use this code. 
+
+The code below establishes your Twitter credentials and then identifies trending topics based on a geographic location, which is established with the `woeid` variable. `2367105` is the WOEID for Boston, but you could [lookup another location](http://woeid.rosselliot.co.nz/) and use that code if you prefer. The code also filters out any trending topics that do not include hashtags, so that our poem will end with a hashtag, as all internet poems should.
+
+```{r}
+setup_twitter_oauth("YOUR_CONSUMER_KEY_GOES_HERE", 
+                    "YOUR_CONSUMER_SECRET_GOES_HERE", 
+                    'YOUR_ACCESS_TOKEN_GOES_HERE', 
+                    'YOUR_ACCESS_SECRET_GOES_HERE')
+
+woeid <- "2367105"
+
+trend <- getTrends(woeid)[,1] %>%
+  as_data_frame() %>%
+  rename(trend = value) %>%
+  filter(grepl("^#", trend))
+```
+
+The code below words almost identically to our first mad-lib poem, but instead of inserting a random interjection from Wordnik at the end, it instead samples one of the trending topics pulled from Twitter above and inserts that as the final word in the poem.
+
+```{r}
+poem <- paste(c(poem_word("verb"), " thy ", poem_word("noun"), " from ", poem_word("preposition")," my ", poem_word("noun"), ", and ", poem_word("verb"), " thy ", poem_word("noun"), " from ", poem_word("preposition"), " my ", poem_word("noun"), '!" \nQuoth the Ravbot, "Never ', trend %>% sample_n(1), "!'"), collapse = "")
+
+cat(poem)
+```
+
+Then, so long as the resulting poem is less than 140 characters, we can post it to Twitter. The code below will check if the string `poem` is less than 140 characters and post if it is. If not, it will print a message asking you to rerun the poem generator. We could write this in a slightly more complicated way so the script would automatically rerun the poem generator until it created a poem short enough to tweet.
+
+```{r}
+if(nchar(poem) < 140) {
+  tweet(poem)
+  } else {
+    print("The poem is too long. Please rerun the generator and try again!")
+  }
+```
+
+We could do all of this with a longer segment of a poem, of course—or the whole thing!—though the resulting poem would be far too long to tweet! But Twitter isn't the only platform out there for such things. 
+
+```{r}
+poem <- paste(c('"Be that ', poem_word("noun"), ' our sign of parting, ', poem_word("noun"), ' or fiend!" I ', poem_word("verb"), ' upstarting— \n "Get thee back into the ', poem_word("noun"), ' and the Night\'s ', poem_word("proper-noun"), 'ian shore! \nLeave no black ', poem_word("noun"), ' as a token of that ', poem_word("noun"), ' thy soul hath ', poem_word("verb"), '! \nLeave my loneliness ', poem_word("adjective"), '—quit the ', poem_word("noun"), ' ', poem_word("preposition"), ' my door! \n', poem_word("verb"), ' thy beak from out my ', poem_word("noun"), ', and take thy ', poem_word("noun"), ' from ', poem_word("preposition"), ' my ', poem_word("noun"), '!" \nQuoth the Ravbot, "Never ', trend %>% sample_n(1), "!'"), collapse = "")
+
+cat(poem)
+```
+
+Mad Libs style bots like this one are only one possibility for using computational tools to remix cultural objects. I used similar methods to these to create [IshmaFML](https://twitter.com/IshmaFML) (sound it out) and [AhaBlessed](https://twitter.com/AhaBlessed), which mash up lines from *Moby Dick* with sections of tweets using the hashtags #fml and #blessed, respectively, to occasionally hilarious or even evocative results. Creative writers are doing even more interesting and innovative things using computational tools, which can be ludic and evocative, as well as statistical and analytical. For just one example, you might look to the work of a poet like [Nick Monfort](http://nickm.com/poems/) or some of the works in the [Electronic Literature Collection](http://collection.eliterature.org/3/). 
+
+Now, as we end our work, let's be sure to close our sessions on RStudio Server:
+```{r}
+q()
+```

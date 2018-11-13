@@ -1,0 +1,417 @@
+---
+title: "Lab 8 - Computational Reading I"
+author: "Ryan Cordell"
+date: "2018-03-13"
+output: html_document
+---
+
+# R Markdown
+
+This is an [R Markdown document](http://rmarkdown.rstudio.com/) (RMD), hence the `.rmd` file extension. R Markdown blends the markdown conventions you are learning in this class with a few customizations that let you embed snippets of code, as well as any outputs (e.g. graphs, maps) produced by that code into Markdown documents. This lets you weave together prose and code, so your readers can see the technical aspects of your work while reading about their interpretive significance. If you [view this document on Github](https://github.com/rccordell/s18tot/blob/gh-pages/labs/lab8-ComputationalReading.Rmd) you can see how RMD translates for presentation on the web. If you use Wordpress, you can enable Markdown for composing posts and pages by installing the Jetpack plugin.
+
+# Running Code
+
+As an RMD file, however, this is more than a flat text document: it's a program that you can run in RStudio. R Markdown allows you to embed executable code into your writing. If you click the 'run' arrow in the gray box below, the code will run. You should see the results in your console window. Try that now.
+
+```{r}
+2+2
+5*32
+10^10
+```
+
+As in most programming languages, you can do math in R: Charles Babbage would marvel at how easy it is!
+
+You create your own code blocks by typing the characters on the first and last line of the block above (using three backticks and including the {r} designator); the code you want to execute goes on the lines in between. Try creating a code block below with the line `print("Hello World!")` in it (do not type the backticks at the beginning and end of that phrase; they are the Markdown convention for separating out bits of code from regular text). 
+In addition to using the run buttons above, you can also run R code within a code block *one line* at a time by putting your cursor on the line and hitting `command-return` (on a Mac), `control-return`(in Windows or Linux). You can also execute a line of code not enclosed in an executable code block by highlighting the entire line or lines of code and pressing `command-return` or `control-return`. When you work with regular R documents—without the markdown—this is the primary way you run code. Try running the line of code just below by highlighting the entire line and hitting `command-return`/`control-return`:
+
+plot(1:100,(1:100)^2)
+
+One reason many folks love R is the ease with which you can create plots and other data visualizations using it. We'll learn more about those as this class progresses. Note that you can also run code by pasting or typing it directly into the console window. This runs the code but does not save it as part of your RMD or R file.
+
+# Packages and Libraries
+
+One of the greatest attractions of R is the robust community writing *R packages*: collections of functions, data, and documentation that extend the capabilities of base R. Think of them like plugins, extensions, or DLC, like you may have installed for other kinds of software, such as your internet browser. For these labs I've installed all the packages we will need in this RStudio Server application. If you prefer to run RStudio on your own machine, you would install a package by running code that looks like this: `install.packages("tidyverse")`. 
+
+In order to actually *use* packages that have been installed, you must load them using the `library()` function (note the textual metaphor—each package is a "library" of code R can refer to). You would usually load all of the packages you wish to use in a given script at the beginning, so that the functions, objects, and help files of that package will be available to you as you work. While you don't have to install a package every time you want to use it, you will need to invoke its library at least once during each R work session. 
+
+```{r}
+library(tidyverse)
+library(tidytext)
+```
+
+# Variables 
+
+In this class we won't be using R for math—at least not explicitly—we're interested in using R to learn more about texts. Remember that Ada Lovelace thought the Analytical Engine "might act upon other things besides *number*," including language or music (Gleick 116). With modern programming languages we can manipulate text with our machines and learn things about textual structure that are hard to ascertain by reading alone, particularly for large collections of text.
+
+So let's start doing just that, though for now we'll be using some small(ish) texts to better understand how R code operates rather than really trying to learn much new about the texts themselves. In a recent class I wished aloud that we could read Henry James' novella "In the Cage," so let's start with it. The code below will read the text of "In the Cage" from Project Gutenberg into R's memory. 
+
+```{r}
+cage <- data_frame(text=read_file("http://www.gutenberg.org/cache/epub/1144/pg1144.txt"))
+```
+
+Before we go any farther, what is that word `cage` in the code above? It's a variable, which means that it stores data for use in later processing. While Babbage and Lovelace imagined storing variables on physical cards that could be then used as input for the next stage of computation, in R variables are stored in your computer's working memory and designated by the labels we assign them. The `<-` assigns the data to its right to the variable on its left; metaphorically, this command says "take the results of the operation on the right and store it in the container on the left." Data could be loaded from outside R, as we are doing here, or it could be the results of a process within R, such as the transformation of another variable. 
+
+A note: we used `<-` to assign this variable, but you can use `=` to do the same, which is why the code below will do exactly what the code above did:
+
+```{r}
+cage = data_frame(text=read_file("http://www.gutenberg.org/cache/epub/1144/pg1144.txt"))
+```
+
+Essentially, this code is telling R to read the lines of text found at the URL and to put all that information into a variable called `cage` so that we can summon that information easily for future operations. *Important note*: assigning a variable in this way does not  create a new file on your hard drive, but simply stores the information in working memory. If you were to quit R (without telling it to save your session), then the next time you loaded R you would need to rerun your code to this point in order to restore this variable. 
+
+A few important but perhaps not obvious points about variables:
+
+1. Their names are arbitrary. I could have called this variable `james` or `novella` or `hotDog` (save using a few characters reserved for special uses in R; more on that anon). Folks have very different philosophies about naming variables, and the best practice often depends on the uses to which a particular bit of code might be put. If I were writing a general script for detecting text reuse in newspaper pages, the highly specific `cage` might not be the best choice. I might instead opt for `book` or something that makes the general meaning of that variable within the script plain.
+
+2. Variables can be reassigned. You may have noticed that we loaded data twice, though with only slightly different settings, into the variable `cage`. Often you will transform your data and replace a variable with the transformed version, but you want to be careful when doing so. A variable holds the data you've assigned it until it is reassigned or until you quit R (that's not precisely right, but it's good enough for now). 
+
+3. We assign data to variables so that we can easily invoke that data for various kinds of analyses and transformations. We'll see some of those in the following. 
+
+This particular variable is a dataframe, which is how R stores tabular data (think of an excel spreadsheet). If you look in your "Global Environment" panel in R Studio, you should now see `cage` listed under "Data." That panel will list all of the variables and other data currently in memory that can be invoked in your scripts. You can click the little grid next to `cage` in order to load the data frame in a new window, or you could run this code to do the same:
+
+```{r}
+View(cage)
+```
+
+This is perhaps the simplest spreadsheet ever designed, with one column (titled "text") and one row. We'll get to more advanced dataframes later this semester. For now, however, if we wanted to look more closely at the "text" column we could run:
+
+```{r}
+cage$text
+```
+
+What do you think all those `\r` and `\n` in the text represent? We can get rid of them with something like this:
+
+```{r}
+cage$text <- gsub("\r\n", " ", cage$text) 
+
+cage$text
+```
+
+Notice that when we import text directly from a Project Gutenberg URL, we get not only the text itself but all the paratext about Project Gutenberg, added to the beginning and end of James' story (side question: how does this kind of digital paratext relate to the printed paratext we've spent so much time considering this semester?). There are different ways of trimming that information, if we want to, but the simplest is to use the `gutenbergR` package, which we can load and then use to import Project Gutenberg data in a cleaner dataframe:
+
+```{r}
+library(gutenbergr)
+
+cage <- gutenberg_download(1144, meta_fields = c("title", "author"))
+View(cage)
+```
+
+What's different about the `cage` variable when downloaded in this way? Can you use the code block below to download a different book from Project Gutenberg and assign it to a new variable?
+
+```{r}
+
+
+
+```
+
+# Functions
+
+`readLines`, `view`, `gsub`, and `gutenberg_download` above are functions. A function is a bit hard to define, given the range of functions in R, but in brief: a function is a bundle of code that performs a specific task. The wide range of functions available in R (and its extensions, or "packages," which we will discuss soon) is one of the great strengths of the platform. Programmers have written code for a great many tasks, and by invoking that code you can build on their work rather than writing everything directly from scratch. 
+
+Run the code below and look at the resulting dataframe (it should open automatically). Can you tell what the code did? Look more closely at the lines in the code block: what do you think each of those functions does, and how do they work together? Spend a few minutes with this and then we will talk through it together.
+
+```{r}
+words <- cage %>% 
+  unnest_tokens(word, text) %>%
+  count(word, sort = TRUE) %>%
+  ungroup
+
+View(words)
+```
+
+Importantly, think about what `words` means in this code. What changes did it make to your RStudio interface? Does it look like something we discussed earlier?
+
+Perhaps we want to just look at words from "In the Cage" that carry more semantic meaning. The code below just slightly modifies what we did above. Run the code below and then ask, what do you think the new operation is doing?
+
+```{r}
+words <- cage %>% 
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE) %>%
+  ungroup
+
+View(words)
+```
+
+# Textual Analysis
+
+Now that we've got the basic vocabulary of R down, let's explore a bit more of what we can do using it. We're only going to scratch the surface of computational text analysis in the next few days, but I hope these exercises will help you:
+
+1. Better understand the inner workings of functions you may use frequently, perhaps without even realizing it, such as word counts or concordances.
+2. Begin to recognize how computer programs think, and how they enable researchers to identify textual patterns that would be difficult to notice while reading.
+3. Think about how you might *operationalize* a textual question so that computation could help you answer it; in other words, how would you need to transform a text in order to find the pattern you are interested in, and what steps would be required to transform it in that way?
+
+To begin meeting these goals, let's import some new data. We'll use a more complex bit of code to do this. **Note**: The code below is liberally adapted (read: mostly stolen) from Julia Silge and David Robinson's [*Tidy Text Mining with R*](http://tidytextmining.com/), chapter 4, which would be a great resource to consult if you're unsure what's going on. Can you discern what the code below does? In particular, what do you think the `%>%` operator does in the code?
+
+```{r}
+
+austen_books <- gutenberg_works(author == "Austen, Jane")
+
+austen <- gutenberg_download(c(austen_books$gutenberg_id), meta_fields = "title") %>%
+  filter(gutenberg_id != 31100) %>%
+  select(text, title) %>%
+  filter(text != "") %>%
+  na.omit()
+```
+
+## Word Count
+
+Now that we have a corpus of texts, what can we learn about it using R? Let's start exploring. In the code below we create two separate variables. Run these code snippets individually (remember CMD/CTR + RETURN) and then look at the resulting data frames. What's the difference between `book_words` and `total_words`? Then run the third snippet. What does `left_join` do to the `book_words` data frame?
+
+```{r}
+book_words <- austen %>%
+  unnest_tokens(word, text) %>%
+  count(title, word, sort = TRUE) %>%
+  rename(count = n)
+  
+total_words <- book_words %>%  
+  group_by(title) %>%
+  summarize(total=sum(count))
+
+book_words <- left_join(book_words, total_words)
+
+```
+
+Now that we've created a dataset of how often each word appears in Austen's novels, as well as the total number of words in each novel, we can see how common or rare particular words are in Austen's writing.
+
+```{r}
+library(ggplot2)
+ggplot(book_words, aes(count/total, fill = title)) +
+  geom_histogram(bins = 50, show.legend = FALSE) +
+  xlim(NA, 0.0009) +
+  facet_wrap(~title, ncol = 2, scales = "free_y")
+```
+
+Those graphs are hard to read because of their long tails. In these texts, as with most, the most common words are *much, much* more common than the others. There's a mathematical way to describe this: **Zipf's Law**: named for George Zipf, a twentieth-century American linguist. It says that words decrease logarithmically in frequency: in any given corpus, we would expect the most common word to be twice as common as the second most common word, three times as common as the third most common word, and so forth. That law results in a slope very like the one you see for word frequencies in Austen's novels.
+
+We perhaps don't want to look at all the words in Austen, but instead words that are important (read: relatively common) but not so common as to be semantically meaningless. Fortunately there's a fuction in `tidytext` that allows us to filter out "stop words":
+
+```{r}
+book_words <- book_words %>%
+  anti_join(stop_words)
+
+View(book_words)
+```
+
+Looking at the `book_words` variable now, what do you think "stop words" are? If we arrange our words table to put the words with higher values at the top, we'll see those words that are, perhaps, characteristic of Austen's novels. What do you notice about them?
+
+```{r}
+book_words %>%
+  arrange(desc(count)) %>%
+  View()
+```
+
+
+We could also create a new column that calculates the ratio of word frequency to the overall words in the book:
+
+```{r}
+book_words <- book_words %>%
+  ungroup() %>%
+  mutate(ratio = count / total) %>%
+  arrange(desc(ratio))
+
+View(book_words)
+```
+
+
+We can plot these as well, either overall...
+
+```{r}
+plot_austen <- book_words %>%
+  arrange(desc(count)) %>%
+  mutate(word = factor(word, levels = rev(unique(word))))
+
+ggplot(plot_austen[1:20,], aes(word, count, fill = title)) +
+  geom_bar(stat = "identity") +
+  labs(x = NULL, y = "Frequent, Significant Words in Jane Austen's Novels") +
+  coord_flip()
+```
+
+Or grouped by book (you might have to expand your `Plots` pane to read these):
+
+```{r}
+plot_austen <- plot_austen %>% 
+  group_by(title) %>% 
+  top_n(20) 
+
+ggplot(plot_austen, aes(word, count, fill = title)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  labs(x = NULL, y = "Frequent, Significant Words in Jane Austen's Novels") +
+  facet_wrap(~title, ncol = 3, scales = "free") +
+  coord_flip()
+```
+
+Thus far we haven't even moved past simple word counts: the most basic kind of computational text analysis we can do in R. I hope this little peek begins to hint at how our own "wheelwork" of R studio might give allow us to look at writing in new ways. 
+
+## Building a Concordance
+
+```{r}
+austen_words <- austen %>%
+  unnest_tokens(word,text)
+```
+
+Our next experiment will create a concordance of Austen's novels. This process used to be the effort of entire scholarly careers, but we can do this by adding another column to the dataframe created above which is not just the first word, but the second. What do you think the "lead" function in the code below does? What would happen if we changed the number in `lead(word,1)` to `lead(word,2)`? 
+
+```{r}
+austen_words %>% mutate(word2 = lead(word,1)) %>% head
+```
+
+Complete the line of code in the code block below, using the `mutate` and `lead` functions to add three new colums to `austen_words`—`word3`, `word4`, and `word5`. These should each be one step further away in the text from `word`. 
+
+```{r}
+
+austen_words <- austen_words %>%
+  mutate(word2 = lead(word,1))
+
+austen_words <- 
+
+```
+
+We now have a basic concordance: every word in Jane Austen's novels (and letters) with the two words immediately preceding and the two words immediately following in the texts. So, if you wanted to see the immeidate context around a certain word in Jane Austen's writing, you could run the code below:
+
+```{r}
+austen_words %>% filter(word3=="she") %>%
+  View()
+```
+
+Change the word above and run the code again. How might building such a concordance allow us to explore a text or a group of texts? 
+
+## Ngrams
+
+Words are one way to think about texts, but our concordance above suggests another: what are called in computer science Ngrams, or sequences of `n` words in length. You may have experimented with [the Google Books Ngrams Viewer](https://books.google.com/ngrams), which allows you to plot the proportional frequency of phrases over time from the Google Books corpus. 
+
+Once we begin working with books as textual data, we can choose our units of analysis on the fly. Above we used `unnest_tokens` to separate Jane Austen's novels into words, but here we separate into "4 grams," or sequences of 4 words. This allows us to plot the frequency of particular phrases across Austen's novels. Try out the code below to see what I mean (note: this code may take a few minutes to run). 
+
+```{r}
+book_ngrams <- austen %>% 
+  unnest_tokens(ngram,text,token = "ngrams", n = 4) %>%
+  group_by(title, ngram) %>% 
+  summarize(count = n()) %>%
+  arrange(desc(count))
+
+View(book_ngrams)
+```
+  
+By "spreading" this data into two columns, we can more easily see which ngrams appear in each book.
+
+```{r}
+
+book_ngrams <- book_ngrams %>%
+  spread(title,count,fill=0)
+
+View(book_ngrams)
+
+```
+
+Feel free to change the ngram value above and rerun the code between line 288 and here. How does changing the token unit change what you can learn?
+
+Now run the code below: what does it do? Can you begin to piece together how?
+
+```{r}
+row_sub <- apply(book_ngrams[2:7], 1, function(row) all(row !=0))
+shared_book_ngrams <- book_ngrams[row_sub,]  
+View(shared_book_ngrams)
+```
+
+## Ngram Applications
+
+Ngrams are a bit more complex than simple word counts, but not *that much more* complex. In Friday's lab we'll delve into some more advanced territory. In closing today, however, I wanted to show how even such basic patterns contribute to more advanced analyses. 
+
+Before we run this code, it might be good to clear our environment; click the little broom icon in your `Environment` pane. 
+
+```{r}
+newspaperPages <- data_frame(
+  text = c(text=read_file("http://chroniclingamerica.loc.gov/lccn/sn85055199/1849-11-28/ed-1/seq-1/ocr.txt"),text=read_file("http://chroniclingamerica.loc.gov/lccn/sn98060050/1845-02-28/ed-1/seq-1/ocr.txt")),
+  title = c("LewisburgChronicle","VermontPhoenix"))
+```
+
+Let's look at all the five-grams on both the historical pages we've loaded. After running the code below, you should see a dataframe with two columns: the first with the newspaper names and the second with the five-grams for each listed. The five-grams are grouped and counted, so you can see how many times each is used in each paper. We only have two pages in our dataset, so *most* of them will only appear once, but there is some duplication even across so little text.
+
+```{r}
+newspaperPages %>% 
+  unnest_tokens(word,text,token = "ngrams", n = 5) %>% 
+  group_by(title, word) %>% 
+  summarize(count = n()) %>%
+  arrange(desc(count)) %>%
+  View()
+```
+
+We could also visualize this, plotting the five grams based on their occurence on one or both pages.
+
+```{r}
+newspaperPages %>%
+  unnest_tokens(word,text,token = "ngrams", n=5) %>%
+  group_by(title,word) %>% 
+  summarize(count=n()) %>% 
+  spread(title,count,fill=0) %>% 
+  # filter(LewisburgChronicle + VermontPhoenix > 2) %>% 
+  ggplot() +
+  aes(x=LewisburgChronicle,y=VermontPhoenix,label=word) + 
+  geom_point(alpha=.3) + 
+  geom_text(check_overlap = TRUE) +
+#  scale_x_log10() +
+#  scale_y_log10() +
+  geom_abline(color = "red")
+```
+
+The graph below shows which Ngrams appear on both newspaper pages. Is there anything familiar about these phrases? By "spreading" the data into two columns, we can more easily see which ngrams appear on both pages.
+
+```{r}
+newspaperPages %>%
+  unnest_tokens(word,text,token = "ngrams", n=5) %>%
+  group_by(title,word) %>% 
+  summarize(count=n()) %>% 
+  spread(title,count,fill=0) %>%
+  # filter(LewisburgChronicle >= 1 & VermontPhoenix >= 1) %>%
+  View()
+```
+
+Now let's just look at the five grams that appear on both pages. To do that, you just need to "uncomment" line 271 by deleting the hashtag at the front of the line. Then rerun the code.
+
+Thus far we've mostly been using commands to look at the data in various ways, but we haven't been saving those views. If we wanted to, however, we could put some of our results—such as a dataframe of matching five grams between pages—into a new variable, which we could them perform new operations on. Like so:
+
+```{r}
+sharedFiveGrams <- newspaperPages %>%
+  unnest_tokens(word,text,token = "ngrams", n=5) %>%
+  group_by(title,word) %>% 
+  summarize(count=n()) %>% 
+  spread(title,count,fill=0) %>%
+  filter(LewisburgChronicle >= 1 & VermontPhoenix >= 1) %>%
+  rename(fivegram = word)
+sharedFiveGrams$sharedSum = sharedFiveGrams$LewisburgChronicle + sharedFiveGrams$VermontPhoenix
+sharedFiveGrams <- arrange(sharedFiveGrams, desc(sharedSum))
+```
+
+That didn't make anything happen immediately in this source window, but if you look at your "environment" pane you'll see a new variable called sharedFiveGrams. You can click the little table icon next to it to look at this data, which should resemble what we saw before. The only difference is that this dataframe is now saved in our computing environment, and we could now perform additional operations using that data specifically. Let's make a bar chart, just because.
+
+```{r}
+sharedFiveGrams %>%
+  filter(sharedSum > 2) %>%
+  ggplot() +
+  geom_bar(stat="identity") +
+  aes(x=fivegram,y=sharedSum) +
+  labs(title = "Shared Five Grams Between Newspaper Issues", y = "Total Number Shared", x = "Five Grams Shared")
+```
+
+As you might have guessed by now, these newspapers share Ngrams because they both reprinted Edgar Allan Poe's poem "The Raven." You could look at the page images for both newspapers at <https://chroniclingamerica.loc.gov/lccn/sn85055199/1849-11-28/ed-1/seq-1/> and <https://chroniclingamerica.loc.gov/lccn/sn98060050/1845-02-28/ed-1/seq-1/>. In the [Viral Texts Project](http://viraltexts.org) we're working at a larger scale and use slightly more complicated methods (since we don't know in advance where to look for reprints), but Ngrams are important to our methods for finding reprinted content in nineteenth-century newspapers. Essentially, our algorithm is looking for pages across large-scale historical newspaper archives that share many Ngrams in relatively close proximity to each other. Looking for these kinds of textual patterns—overlapping, matching strings of text—allows us to operationalize a humanistic research question, which asks what kinds of texts circulated among newspapers during the nineteenth century.
+
+# Closing the Session
+
+Now, as we end our work, let's be sure to close our sessions on RStudio Server:
+```{r}
+q()
+```
+
+# Fieldbook Assignment
+
+Your fieldbook for coding session 8 should be composed in RStudio, as a new RMD file (`File —> New File —> R New File -> R Markdown`). You should include some of the code you found most interesting/enlightening/infuriating. You can copy and paste from the RMD files we used in class. Make sure you code blocks are separated from your text. They should look like this, but with code in between:
+
+```{r}
+
+
+
+```
+
+Perhaps you can even try to tweak some of the code blocks to do new things. You can't break anything. If something goes wrong simply clear the environment (using that broom icon in the `Environment` pane) and start again. If something goes *really* wrong, just copy the text from the lab files on Github and paste it into your RMD file. I and our practicum students are all available to help. 
+
+Remember that when you run this code you're not making permanent changes to the actual data on the websites from which you imported it: you're bringing the data into the R environment where you can experiment and yes, even make mistakes. In your fieldbook, ruminate on the code and its relationship to some of the ideas in our readings, particularly the Padua and Glieck. Start thinking about the relationships among code, writing, and literary analysis. 

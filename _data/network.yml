@@ -1,0 +1,21 @@
+- menu_name: "Course Developed with Help from:"
+
+- name: "NULab for Texts, Maps, and Networks"
+  url: "https://web.northeastern.edu/nulab/"
+  # class: "network-entypo"
+  title: "NULab for Texts, Maps, and Networks"
+
+- name: "Northeastern English Department"
+  url: "https://www.northeastern.edu/cssh/english/"
+  # class: "services-newsletter"
+  title: "Northeastern English Department"
+
+- name: "Rare Book School"
+  url: "http://rarebookschool.org/"
+  # class: "rss-link"
+  title: "Rare Book School"
+
+- name: "Digital Humanities Summer Institute"
+  url: "http://dhsi.org/"
+  # class: "sitemap-link"
+  title: "Digital Humanities Summer Institute"

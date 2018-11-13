@@ -1,0 +1,33 @@
+---
+layout: page  
+title: "Lab 3 - Simulating the Scriptorium"  
+author: "Claire Dickerson"  
+categories:  
+    - fieldbooks
+    - model
+comments: false  
+show_meta: true   
+
+---
+
+## Lab 3: Simulating the Scriptorium 
+---
+![](http://fb.ru/misc/i/gallery/32842/893859.jpg "First page of Beowulf in the Nowell Codex")
+
+*First page of* Beowulf *in the Nowell Codex*
+
+For my text, I decided to pick [*Beowulf*](http://academic.eb.com/levels/collegiate/article/Beowulf/78692). It is a very important text in literature since it is the first recorded work written in English, but it is also a text that I am relatively familiar with since I have read it no fewer than half a dozen times in the past five years. The exact date the poem was composed is unknown, but some scholars argue it was composed in 700 AD about events that occurred in 500 AD. Unfortunately, none of these dates are really verifiable since the text of *Beowulf* only survives in one fire damaged copy of the [Nowell Codex](https://www.bl.uk/collection-items/beowulf), which is dated around 1000 AD. In the codex with *Beowulf* are also a homily on St. Christopher and copies of *The Marvels of the East*, *Letter of Alexander to Aristotle*, and *Judith*, which are all either religious texts or orientalist texts about the monsters that exist in the "East." 
+
+When thinking about the possible influence of scribes on the text, it is important to note that the surviving edition of *Beowulf* was written by two separate scribes, changing about halfway through. The text could be dramatically different from how it originally was since it went through not only one but two filters when being written down. Again, though, it is impossible to tell how different the text is from the original, in part because of the limited source material and in part because it is hypothesized that the story came from an oral tradition. In an oral tradition, the story would have gone on changing with every bard who sang it, so the question of how *Beowulf* has changed from its original becomes somewhat beside the point since it has always been changing. Drawing on the theme of the medium being the message again, a text based on oral tradition is extremely relevant since the message is tied as much to the people who tell it as it is to the actual content of the story.
+
+One particularly striking example of a possible change in *Beowulf*, however, is within the realm of religion in the poem. It is quite obviously a pagan text, drawing on the folklore of both pre-Christian Scandinavia and pre-Christian England, but it is littered with Christian symbolism and has been considered a [Christian allegory](http://www.jstor.org/stable/27830214?seq=1#page_scan_tab_contents) on many occasions. It is one of the prime examples where a scribe could have significantly altered the text, and this seems especially possible because the insertion of Christianity just does not seem to fit quite right. Just as many pagan holidays were given a Christian context in order to convert as many heathens as possible, the same could have been done with this text, and this interpretation is entirely plausible since the original scribes were monks. Somewhat like the inverse of the "[Story of Caedmon](http://www.heorot.dk/bede-caedmon.html)," these monks were not necessarily storytellers, so their insertion of Christian elements into the story may have been a bit messy, but it would have gotten the job done. 
+
+However, as I have mentioned multiple times before, this is all speculation. We have no physical evidence besides a few pages of a deteriorating manuscript, so my interpretation could be completely wrong. It is entirely possible that the manuscript that exists was the first edition of the story ever made. Is it highly likely that that is the case? Perhaps not, but it is still a possibility.
+
+### "The Big Questions"
+
+When thinking about the "canon" of literary works that exists today, the common denominator is religion, and Christianity to be precise. Things are slightly different today, but going back just 10 years and flipping through a Norton anthology, one will be hard pressed to find a work that was not written by a dead, white, Christian man. Even though things are different today in modern editions of Norton anthologies, there are still many schools, like public high schools for example, that still use those older books. And if the content of the works in those books does not overtly deal with Christianity, most extant ancient works were written down by Christian monks, so there is bound to be some Christian footprint somewhere.
+
+But putting my cynicism aside and reflecting on the lab, it brought to light just how much work went into creating the texts we have today. Each work would have taken hundreds if not thousands of hours to be transcribed, especially with the amount of detail present in most manuscripts, so it is truly a miracle that any of the ancient works we have still exist at all. It is also a bit of a reflective, sad moment to think about all the works we assuredly lost since they were not copied down, but scribing was difficult, expensive work. Thinking about the labor that went into creating a book also gives me a much greater appreciation for my ability to type this on a computer in just a few hours rather than being forced to write it by hand over a period of days. Working as a scribe was a highly educational experience, but it is one I would rather leave in the classroom than ever have to have again.
+
+I am coming out of this assignment with a much greater appreciation for handwritten texts, but I have ended up with a much greater appreciation for the scribes themselves than the creators like Chaucer who [could never appreciate the work scribes did.](https://genius.com/Geoffrey-chaucer-chaucers-words-to-his-scrivener-annotated) It is a very different side of the literature coin since most people tend to emphasize content, but the actual act of writing is important too. So often people forget to think about the implications of such a simple act, but, much like writing in Markdown strips down typing on a computer to its most basic element, working as a scribe stripped down writing in general to its most basic element. It was a moment to stop and think about how far such a seemingly basic technology has come, and it is a lesson that I will hopefully think about in the future, and particularly whenever I complain about having to write a paper again.

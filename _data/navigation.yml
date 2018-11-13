@@ -1,0 +1,45 @@
+- title: Home
+  url: "/"
+  side: left
+
+- title: Description & Objectives
+  url: "/description/"
+  side: left
+  
+- title: Policies
+  url: "/policies/"
+  side: left
+
+- title: Schedule
+  url: "/schedule/"
+  side: left
+
+- title: Assignments
+  url: "/assignments/"
+  side: left
+  dropdown:
+  - title: "In-class Work"
+    url: "/assignments/inclasswork/"
+  - title: "Fieldbook"
+    url: "/assignments/fieldbook"
+  - title: "Dead Media Poster"
+    url: "/assignments/deadmediaposter/"
+  - title: "Unessays"
+    url: "/assignments/unessay/"
+
+- title: Updates
+  url: "/updates/archive/"
+  side: right
+  dropdown:
+  - title: "In-Class Assignments"
+    url: "/updates/in-class/"
+  - title: "Lab Assignments"
+    url: "/updates/labs/"
+  - title: "Student Fieldbooks"
+    url: "/updates/fieldbooks/"
+  - title: "Model Fieldbooks"
+    url: "/updates/models/"
+
+- title: Search
+  url: "/search/"
+  side: right
