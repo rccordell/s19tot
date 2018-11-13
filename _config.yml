@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Technologies of Text, Spring 2018'
+title: 'Technologies of Text, Spring 2019'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'An experiential learning course in the Northeastern University English Department'
@@ -25,7 +25,7 @@ author: ryancordell
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://s18tot.ryancordell.org'
+url: 'https://s19tot.ryancordell.org'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -38,7 +38,7 @@ baseurl: ''
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://s18tot.ryancordell.org/images/'
+urlimg: 'https://s19tot.ryancordell.org/images/'
 
 
 # Logo size is 600x80 pixels
