@@ -8,4 +8,4 @@ header:
 permalink: "/updates/models/"
 ---
 
-{% include list-posts entries='15' category='model' %}
+{% include list-posts entries='25' category='model' %}

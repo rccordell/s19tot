@@ -30,42 +30,37 @@ Really, all I *want* to write here can be found in Sonya Huber's [Shadow Syllabu
 
 # Course Logistics
 
-+ Meeting Days: Tuesday-Friday
++ Class Meetings: Wednesday-Friday, 11:45-1:25
 + Location: Barrs Room (472 Holmes Hall)
 + Professor: [Ryan Cordell](http://ryancordell.org)
 + Cordell Email: [r.cordell@northeastern.edu](mailto:r.cordell@northeastern.edu) 
 + Cordell Office: Nightingale Hall 415
-+ Cordell Office Hours: Thursday 10am-noon, Friday 11:30am-12:30pm, and by appointment
-
-## 9:50-11:30am Section
-+ Practicum Student: [Bill Quinn](mailto:quinn.wi@husky.neu.edu)
-
-## 1:35-3:15 Section
-+ Practicum Student: [David Medina](mailto:medina.d@husky.neu.edu)
++ Cordell Office Hours: Wednesday 10-11, Friday 1:30-2:30, and by appointment
 
 -----
 
 # Required Texts
  
-The majority of our readings will be available online or through a [password protected, digital course packet](https://www.dropbox.com/s/f1aqdvvhqlhphj4/ToTcoursepacket.zip?dl=0) (I will give you the password for this zip file in class). We will read a few books, however, which you will need to purchase:
+The majority of our readings will be available online or through the library's Leganto system. We will read a few books, however, which you will need to purchase:
  
 + James Gleick, [*The Information: A History, A Theory, A Flood*](http://amzn.to/2g3003b), Vintage (2012).
 + Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage: The \(Mostly\) True Story of the First Computer*](http://amzn.to/2g311sc), Pantheon (2015).
 + Emily St. John Mandel, [*Station Eleven*](http://amzn.to/2AHrUc9), Vintage (2015).
++ Amaranth Borsuk, [*The Book*](https://amzn.to/2Ea7Gvc) (2018)
 
 -----
  
 # Communication
 
-The best way to get in touch with me is to visit during my office hours. If you’re unsure about our readings, struggling with an assignment, or just want to talk, please visit. During the Spring 2018 semester, I will be in my office (Nightingale 415) on Thursday from 10am-noon and Friday from 11:30am-12:30pm. I’m also happy to make appointments at other times—just [email me](mailto:r.cordell@northeastern.edu) with **at least three possible meeting times** for me to choose among. I can schedule in person or virtual meetings.
+The best way to get in touch with me is to visit during my office hours. If you’re unsure about our readings, struggling with an assignment, or just want to talk, please visit. During the Spring 2018 semester, I will be in my office (Nightingale 415) on Wednesday from 10-11am and Fridays from 1:30-2:30. I’m also happy to make appointments at other times—just [email me](mailto:r.cordell@northeastern.edu) with **at least three possible meeting times** for me to choose among. I can schedule in person or virtual meetings.
 
-The next best way to get in touch with me is by [sending me an email](mailto:r.cordell@northeastern.edu). When you write to me: consider your tone and your audience. An email to your professor shouldn’t read the same as your emails to friends. For help, see [this guide to emailing your professors](https://medium.com/@lportwoodstacer/how-to-email-your-professor-without-being-annoying-af-cf64ae0e4087). I will respond to an email within 48 hours. Often I will respond more quickly, but you should not send me an urgent email, for example, the night before an assignment is due. If for some reason I have not responded to your email within two days, please do follow up—my delay is likely inadvertent and I will welcome a reminder.
+The next best way to get in touch with me is by [sending me an email](mailto:r.cordell@northeastern.edu). When you write to me: consider your tone and your audience. An email to your professor shouldn’t read the same as emails to friends or family. For help, see [this guide to emailing your professors](https://medium.com/@lportwoodstacer/how-to-email-your-professor-without-being-annoying-af-cf64ae0e4087). I will respond to an email within 48 hours. Often I will respond more quickly, but you should not send me an urgent email, for example, the night before an assignment is due. If for some reason I have not responded to your email within two days, please do follow up—my delay is likely inadvertent and I will welcome a reminder.
 
 -----
 
 # Class Engagement
 
-This experiential course requires active engagement in class activities and discussions. There will be few lectures and we will not be building toward an exam. Instead, we will work together to build our facilities for thinking critically about literature, new media, and technology. You should come to every class having read all of the required reading, watched the required videos, browsed the suggested resources, and so forth. You should enter the classroom prepared to discuss these materials with colleagues and complete both individual and group [in-class assignments](http://f17rwda.ryancordell.org/assignments/in-class). 
+This experiential course requires active engagement in class activities and discussions. There will be few lectures and we will not be building toward an exam. Instead, we will work together to build our facilities for thinking critically about literature, new media, and technology. You should come to every class having read all of the required reading, watched the required videos, browsed the suggested resources, and so forth. You should enter the classroom prepared to discuss these materials with colleagues and complete both individual and group in-class assignments. 
 
 ## Participation
 
@@ -101,14 +96,15 @@ Essentially, when you are absent you will receive a '0' for any in-class work as
 
 ## "Information Overload" Day
 
-I do understand that the semester can get hectic. The reading load for this class is often challenging, and you must balance it with the work in your other classes. Most likely you will have days when you simply cannot—for whatever reason—complete the assigned reading. To that end, you may take *one “information overload” (IO) day* during the semester. On this day you will not be expected to contribute to class discussion and you will receive a pass on any in-class work (the work will be ungraded and not factored into your final “In-Class Work” grade). In order to take an IO day, you must follow these rules:
+I do understand that the semester can get hectic. The reading load for this class is often challenging, and you must balance it with the work in your other classes. Most likely you will have days when you simply cannot—for whatever reason—complete the assigned reading. Please do not simply skip class, compounding your stresses, when this happens. Instead, you may take *“information overload” (IO) days* during the semester up to the number specified in your grade contract. On these days you will not be expected to contribute to class discussion and you will receive a pass on class preparation. In order to take an IO day, you must follow these rules:
 
 1. You must attend class, listen attentively to any lectures or class discussions, and take part in any activities or group work not dependent on the day’s reading. **Your IO days cannot be used as additional excused absences**.
 2. You must inform me **before the beginning of class** that you are taking your IO day. You may not wait until I call on you or until you see day’s the in-class assignment. **I will deny any IO requests made during class**. To that end: take special care to be on time if you plan to request an IO day, as you won’t be allowed to request one if you arrive late.
 3. You may not extend an IO day into another class session. If, for instance, you take your IO day during our first class on a novel, you will not then be excused from discussing the book during subsequent classes.
-4. You may not take an IO day to avoid completing on a major assignment. IO days will excuse you from reading quizzes, group work, or reflections, but nothing of more serious import. If you are unsure whether an assignment is "major," the syllabus is a good guide. If a given assignment has it's own "assignment" page on the course website, it is a major assignment.
+4. You may not take an IO day to avoid completing a major assignment. IO days will excuse you from reading quizzes, group work, or reflections, but nothing of more serious import. If you are unsure whether an assignment is "major," the syllabus is a good guide. If a particular assignment has its own "assignment" page on the course website, it is a major assignment.
+5. In general you should not use IO days to avoid drafting writing before our in-class workshops. The writing demands in this class are high and the workshops are designed to help you stay on task for completing them, as well as to give you valuable feedback as you write or revise. It would strongly advise against foregoing these benefits.
 
-IO days are intended to help you manage the inevitable stresses of your individual semester. Use them wisely.
+IO days are intended to help you manage the inevitable stresses of your individual semester. Use them wisely. 
 
 -----
 
@@ -140,13 +136,13 @@ The rubric below outlines my expectations for device use in this classroom. We c
 
 ## Technical Snafus
 
-This course will rely on access to computers, specific software, and the internet. **At some point during the semester you WILL have a problem with technology**: your laptop will crash, a file will become corrupted, a server will go down, a piece of software will not act as you expect it to, or something else will occur. These are facts of twenty-first-century life, not emergencies. To succeed in college and in your career you should develop work habits that take such snafus into account. Start assignments early and save often. [Always keep a backup copy of your work saved somewhere secure](https://www.dropbox.com/) (preferably off site). None of these unfortunate events should be considered emergencies: inkless printers, computer virus infections, lost flash drives, lost passwords, corrupted files, incompatible file formats. It is *entirely your responsibility* to take the proper steps to ensure your work will not be lost irretrievably; if one device or service isn’t working, find another that does. When problems arise in the software I have assigned for you to learn, we will work through those problems together and learn thereby. However, I will not grant you an extension based on problems you may be having with the specific devices or the internet services you happen to use. 
+This course will rely on access to computers, specific software, and the internet. **At some point during the semester you WILL have a problem with technology**: your laptop will crash, a file will become corrupted, a server will go down, a piece of software will not act as you expect it to, or something else will occur. These are facts of twenty-first-century life, not emergencies. To succeed in college and in your career you should develop work habits that take such snafus into account. Start assignments early and save often. Always keep a backup copy of your work saved somewhere secure (preferably off site). None of these unfortunate events should be considered emergencies: inkless printers, computer virus infections, lost flash drives, lost passwords, corrupted files, incompatible file formats. It is *entirely your responsibility* to take the proper steps to ensure your work will not be lost irretrievably; if one device or service isn’t working, find another that does.  When problems arise in the software I have assigned for you to learn, we will work through those problems together and learn thereby. However, I will not grant you an extension based on problems you may be having with the specific devices or the internet services you happen to use. 
 
 -----
 
-# TRACE Evaluations
+# Course Evaluations
 
-Students are expected to complete a TRACE (Teacher Rating and Course Evaluation) toward the end of the semester. I will set aside some time during a class period for students to complete their TRACEs.
+Students are expected to complete a TRACE (Teacher Rating and Course Evaluation) toward the end of the semester. In addition, the English Department asks its students to complete a separate, wholistic, largely narrative course evaluation. I will set aside some time during a class period for students to complete their TRACE and English Departmental evaluations.
 
 -----
 
@@ -154,7 +150,7 @@ Students are expected to complete a TRACE (Teacher Rating and Course Evaluation)
 
 In this class you will abide by Northeastern University’s Academic Integrity Policy at all times:
 
-> A commitment to the principles of academic integrity is essential to the mission of Northeatern University. The promotion of independent and original scholarship ensures that students derive the most from their educational experience and their pursuit of knowledge. Academic dishonesty violates the most fundamental values of an intellectual community and undermines the achievements of the entire University.
+> A commitment to the principles of academic integrity is essential to the mission of Northeastern University. The promotion of independent and original scholarship ensures that students derive the most from their educational experience and their pursuit of knowledge. Academic dishonesty violates the most fundamental values of an intellectual community and undermines the achievements of the entire University.
 
 If you have any questions about what constitutes academic integrity in this class—particularly as the concept applies to digital course projects—please talk to me. We will also discuss the ethics of digital scholarship in class.
 

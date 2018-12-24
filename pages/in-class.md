@@ -8,4 +8,4 @@ header:
 permalink: "/updates/in-class/"
 ---
 
-{% include list-posts category='in-class' %}
+{% include list-posts entries='40' category='in-class' %}

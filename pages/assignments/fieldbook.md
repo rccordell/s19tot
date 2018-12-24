@@ -12,15 +12,15 @@ header:
 + A portfolio of at least 9 documents, composed in [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 + Individual work submitted; collaborative development encouraged
 + Entries due 1 week after the final session for a given lab
-+ Entries will be posted on the course website and be available under [Class Updates](/updates/)
++ Entries will be posted on the course website and can be read under [Class Updates](/updates/)
 + At least 3 entries due by Monday, February 19
 + 40% of total grade
 
 ## Details:
 
-Technologies of Text is an experiential course and defined by hands-on labs throughout the semester. There will be a diversity of activities associated with labs in particular, from observations made at museums to physical documents printed on a letterpress. Some of these activities will be conducted individually and some in groups.
+Technologies of Text is an experiential course and defined by hands-on labs throughout the semester. There will be a diversity of activities associated with the class labs in particular, from observations made during museums visits to printing physical documents on a letterpress. Some of these activities will be conducted individually and some in groups.
 
-Your ToT fieldbook will constitute your central scholarly activity during the semester. I call this assignment a "fieldbook" rather than a "journal" to convey its hybridity: week by week, your entries will include a mix of description, analysis, code, and figures or images. This ongoing assignment will give you the chance to organize the diverse tasks of the class' experiential work, practice the skills introduced in the labs and coding sessions, bring your experiential work into conversation with class readings and personal research, and experiment with ideas that will be further developed in your [Unessay projects](/assignments/unessay).
+Your ToT fieldbook will constitute your central scholarly activity during this semester. I call this assignment a "fieldbook" rather than a "journal" to convey its hybridity: week by week, your entries will include a mix of description, analysis, code, and figures or images. This ongoing assignment will give you the chance to organize the diverse tasks of the class' experiential work, practice the skills introduced in the labs and coding sessions, bring your experiential work into conversation with class readings and personal research, and experiment with ideas that will be further developed in your [Unessay projects](/assignments/unessay).
 
 ### Organizing Your Fieldbook
 
