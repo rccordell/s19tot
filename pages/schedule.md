@@ -24,7 +24,7 @@ header:
 
 ## Reading Due Dates
 
-You should complete the readings listed under a given class session before that class begins. Any [in-class assignments](http://s18tot.ryancordell.org/assignments/inclasswork/) we complete will assume you have fully prepared all required readings for that day.
+You should complete the readings listed under a given class session before that class begins. Any in-class assignments we complete will assume you have fully prepared all required readings for that day.
 
 ## A Key to Alerts
 
@@ -32,7 +32,7 @@ You should complete the readings listed under a given class session before that 
 
 {% include alert warning='These orange alert boxes signal an assignment due date.' %}
 
-{% include alert info='These information boxes signal an in-class lab that we will work on together. As the semester progresses I will add links to the lab assignments to these boxes. Your fieldbook reports are due within a week of a lab session, or the final lab session for those which extend through multiple class sessions, as indicated by the presence of letters (e.g. 5a and 5b).' %}
+{% include alert info='These information boxes signal an in-class lab that we will work on together. As the semester progresses I will add links to the lab assignments to these boxes. Your fieldbook reports are due within a week of a given lab session).' %}
 
 -----
 
@@ -49,7 +49,7 @@ Read:
 + Marshall McLuhan, ["The Medium is the Message"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/8945837500001401?auth=SAML) (1964)
 + Lisa Gitelman, "Introduction: Media as Historical Subjects," from [*Always Already New: Media, History, and the Data of Culture*](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/8945837470001401?auth=SAML) (MIT Press, 2006)
 
-{% include alert info='[Lab #1: Markdown]()
+{% include alert info='[Lab #1: Markdown]()%}
 
 -----
 
@@ -64,7 +64,7 @@ Read:
 
 ## Friday, January 18: Manuscript
 
-{% include alert info='[Lab #2: Scriptorium]()
+{% include alert info='[Lab #2: Scriptorium]()%}
 
 Read:
 
@@ -113,7 +113,7 @@ Watch:
 
 ## Friday, February 1: Typecasting
 
-{% include alert info='[Lab #: Letterpress I]()
+{% include alert info='[Lab #: Letterpress I]()%}
 
 Read:
 
@@ -141,7 +141,7 @@ Read:
 
 ## Friday, February 8: A Mechanical Mind
 
-{% include alert info='[Lab #: Letterpress II]()
+{% include alert info='[Lab #: Letterpress II]()%}
 
 Read: 
 
@@ -172,7 +172,7 @@ Cordell away
 
 ## Friday, February 22: TBA
 
-{% include alert info='[Lab #: Letterpress III]()
+{% include alert info='[Lab #: Letterpress III]()%}
 
 
 ## Wednesday, February 27: Circulation
@@ -190,7 +190,7 @@ Read:
   + [February ?? 1813](http://www.pemberley.com/janeinfo/auslet22.html#letter126)
 + Charles W. Chesnutt, ["Baxter's Procustes"]() (1904)
 
-{% include alert info='[Lab #: Deciphering Physical Books]()
+{% include alert info='[Lab #: Deciphering Physical Books]()%}
 
 -----
 
@@ -213,7 +213,7 @@ Read:
 
 + Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage*](http://amzn.to/2iPqWRY) (beginning-pg. 90)
 
-{% include alert info='[Lab #: Computational Reading I]()
+{% include alert info='[Lab #: Computational Reading I]()%}
 
 ## Wednesday, March 20: Text as Data
 
@@ -223,7 +223,7 @@ Read:
 
 ## Friday, March 22: Machine Writing
 
-{% include alert info='[Lab #: Computational Reading II]()
+{% include alert info='[Lab #: Computational Reading II]()%}
 
 Read:
 
@@ -263,7 +263,7 @@ Read:
 
 ## Friday, April 5: TBA
 
-{% include alert info='[Lab #: TBA]()
+{% include alert info='[Lab #: TBA]()%}
 
 ## Wednesday, April 10: Because Survival is Insufficient
 
