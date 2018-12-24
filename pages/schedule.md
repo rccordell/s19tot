@@ -49,7 +49,7 @@ Read:
 + Marshall McLuhan, ["The Medium is the Message"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/8945837500001401?auth=SAML) (1964)
 + Lisa Gitelman, "Introduction: Media as Historical Subjects," from [*Always Already New: Media, History, and the Data of Culture*](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/8945837470001401?auth=SAML) (MIT Press, 2006)
 
-{% include alert info='[Lab #1: Markdown]()%}
+{% include alert info='[Lab #1: Markdown]()' %}
 
 -----
 
@@ -64,7 +64,7 @@ Read:
 
 ## Friday, January 18: Manuscript
 
-{% include alert info='[Lab #2: Scriptorium]()%}
+{% include alert info='[Lab #2: Scriptorium]()' %}
 
 Read:
 
@@ -81,7 +81,7 @@ Watch:
 
 ## Wednesday, January 23: Vivifying Media
 
-{% include alert warning='DUE: [Dead Media Poster Presentations](http://s18tot.ryancordell.org/assignments/deadmediaposter/) in class' %}
+{% include alert warning='DUE: [Dead Media Poster Presentations](http://s19tot.ryancordell.org/assignments/deadmediaposter/) in class' %}
 
 -----
 
@@ -113,7 +113,7 @@ Watch:
 
 ## Friday, February 1: Typecasting
 
-{% include alert info='[Lab #: Letterpress I]()%}
+{% include alert info='[Lab #: Letterpress I]()' %}
 
 Read:
 
@@ -141,7 +141,7 @@ Read:
 
 ## Friday, February 8: A Mechanical Mind
 
-{% include alert info='[Lab #: Letterpress II]()%}
+{% include alert info='[Lab #: Letterpress II]()' %}
 
 Read: 
 
@@ -172,7 +172,7 @@ Cordell away
 
 ## Friday, February 22: TBA
 
-{% include alert info='[Lab #: Letterpress III]()%}
+{% include alert info='[Lab #: Letterpress III]()' %}
 
 
 ## Wednesday, February 27: Circulation
@@ -190,7 +190,7 @@ Read:
   + [February ?? 1813](http://www.pemberley.com/janeinfo/auslet22.html#letter126)
 + Charles W. Chesnutt, ["Baxter's Procustes"]() (1904)
 
-{% include alert info='[Lab #: Deciphering Physical Books]()%}
+{% include alert info='[Lab #: Deciphering Physical Books]()' %}
 
 -----
 
@@ -213,7 +213,7 @@ Read:
 
 + Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage*](http://amzn.to/2iPqWRY) (beginning-pg. 90)
 
-{% include alert info='[Lab #: Computational Reading I]()%}
+{% include alert info='[Lab #: Computational Reading I]()' %}
 
 ## Wednesday, March 20: Text as Data
 
@@ -223,7 +223,7 @@ Read:
 
 ## Friday, March 22: Machine Writing
 
-{% include alert info='[Lab #: Computational Reading II]()%}
+{% include alert info='[Lab #: Computational Reading II]()' %}
 
 Read:
 
@@ -237,7 +237,7 @@ Read:
 
 ## Friday, March 29: Building a Bot
 
-{% include alert info='[Lab #: Building a Bot]()
+{% include alert info='[Lab #: Building a Bot]()' %}
 
 + Samuel Woolley, Danah Boyd, Meredith Broussard, Made, [“How to Think About Bots”](https://motherboard.vice.com/en_us/article/qkzpdm/how-to-think-about-bots) (2016)
 + [Electronic Literature Collection: Bots](http://collection.eliterature.org/3/collection-bots.html)
@@ -263,7 +263,7 @@ Read:
 
 ## Friday, April 5: TBA
 
-{% include alert info='[Lab #: TBA]()%}
+{% include alert info='[Lab #: TBA]()' %}
 
 ## Wednesday, April 10: Because Survival is Insufficient
 
