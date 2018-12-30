@@ -12,13 +12,12 @@ header:
 
 + Form can vary *widely!!*
 + Students generally work individually, though I am open to collaborative proposals. 
-+ Unessay 1 due March 5 by 5pm
-+ Unessay 2 due TBA
-+ 30% of total grade
++ You will prepare 1 or 2 unessay projects, depending on your contract
++ You will present 1 unessay project to your peers on the last day of class.
 
 ## The Nitty-Gritty 
 
-Twice this semester you will develop unessay projects.
+Once or twice this semester you will develop unessay projects.
 
 1. I *highly prize* creative takes on this assignment. Before jumping into typical paper writing mode, consider other media, presentation styles, and modes of critical engagement you might employ instead.
 2. This is a hands-on course about media and technology: I would be thrilled to see unessays that *do* rather than (only) *describe*. Consider using your unessay assignments to get your hands dirty (perhaps literally) with some of the media we discuss in class.
@@ -79,11 +78,14 @@ Below are some fantastic digital unessays that students have submitted. These ex
 + [Operation Critique](http://operation-critique.tumblr.com/)
 + [Beyond the Words: Text in Art](https://textart.blog)
 + [Programming a Medium](https://www.dropbox.com/s/qqz0pi7ix7rphz2/mhartyUnessay1Body.java?dl=0)
++ [Ada on Ada: A Programmer’s Manifesto](http://adaonada.tumblr.com/)
++ Mixed Korean Scripts and *Hanja* [writeup](https://www.dropbox.com/s/2on2kcxrvwnc4o5/Unessay%20Analysis%20and%20Translation_%20Mixed%20Korean%20Scripts%20and%20Hanja.pdf?dl=0), [Korean text](https://www.dropbox.com/s/4c3ab69s6dfu4pw/Kim%20Unessay%20%231%20%28Korean%29.pdf?dl=0), and [mixed text](https://www.dropbox.com/s/0908fye67yoyayp/Kim%20Unessay%20%231%20%28Mixed%29.pdf?dl=0)
++ [The Best Story I Ever Wrote, Annotated](https://www.dropbox.com/s/gqh7u24tt9a0nnu/Tiarks%20Unessay%20Project.pdf?dl=0)
++ "Fonts and Feelings" [movie](https://www.dropbox.com/s/w6xhz08i07j5kvo/QH_Unessay_1.mov?dl=0) and [writeup](https://www.dropbox.com/s/etr3fjuw3gbaqb7/QH_Unessay_1.pdf?dl=0)
 + [Know Code](https://genius.com/11691335) (music available on request)
++ [Unessay Generator](https://www.dropbox.com/sh/kyzl1n6a73a1fim/AAD6rzk1ia_UNSNZJWzlGbd5a?dl=0)
 + [ESSAIS1580](https://essais1580.wordpress.com/)
 + [The Evolving Album Cover](http://totalbumsunessay.tumblr.com/)
-+ [Ada on Ada: A Programmer’s Manifesto](http://adaonada.tumblr.com/)
-+ [The Best Story I Ever Wrote, Annotated](https://www.dropbox.com/s/gqh7u24tt9a0nnu/Tiarks%20Unessay%20Project.pdf?dl=0)
 + [Skeuomorphic](http://skeuomorphs-f14tot.tumblr.com/)
 + [Graffiti and New Media](http://graffitiandnewmedia.tumblr.com/)
 + [Which Text(s) Work(s)?](https://damoren.wordpress.com/)

@@ -29,17 +29,10 @@ widget2:
 widget3:
   title: "Course Policies"
   url: '/policies/'
-  text: 'Location: Barrs Room (472 Holmes Hall)<br />
+  text: 'Location: 472 Holmes Hall<br />
   Teacher: <a href="http://ryancordell.org" target="_blank">Ryan Cordell</a> (<a href="mailto:r.cordell@northeastern.edu" target="_blank">email</a>)<br />
   Cordell Office: 415 Nightingale<br />
-  Cordell Office Hours: Thursday 10am-noon, Friday 11:30am-12:30pm, and by appointment
-  <hr>
-  Section 1: Tuesday-Friday 9:50-11:30am<br />
-  Practicum Student: <a href="mailto:quinn.wi@husky.neu.edu" target="_blank">Bill Quinn</a>
-  <hr>
-  Section 2: Tuesday-Friday 1:35-3:15<br />
-  Practicum Student: <a href="mailto:medina.d@husky.neu.edu" target="_blank">David Medina</a>
-  <hr>'
+  Cordell Office Hours: Wednesdays 2:30-4:00, Fridays 10-11, and by appointment'
   image: 4917215160_85bfa9e75c_b-302x182.jpg
 
 

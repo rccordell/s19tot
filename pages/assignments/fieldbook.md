@@ -9,64 +9,71 @@ header:
 
 ## Assignment Overview:
 
-+ A portfolio of at least 9 documents, composed in [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
-+ Individual work submitted; collaborative development encouraged
-+ Entries due 1 week after the final session for a given lab
-+ Entries will be posted on the course website and can be read under [Class Updates](/updates/)
-+ At least 3 entries due by Monday, February 19
-+ 40% of total grade
++ A growing portfolio of documents, composed in [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) and committed to a [Github repository](https://github.com/)
++ Students work individually
++ Class preparation entries due before the class in question; lab report entries due 1 week after the final session for the pertinent lab
++ Some stellar entries will be posted on the course website under [Model Fieldbook Entries](/updates/models/)
 
 ## Details:
 
-Technologies of Text is an experiential course and defined by hands-on labs throughout the semester. There will be a diversity of activities associated with the class labs in particular, from observations made during museums visits to printing physical documents on a letterpress. Some of these activities will be conducted individually and some in groups.
+Technologies of Text is an experiential course that moves between discussion of readings and applied "humanities laboratories" each week. A central goal of the class will be to bring its two facets into conversation: to use our readings and discussions to contextualize our applied work in laboratories, and to use our applied work in laboratories to enrich our understanding of concepts from our readings. 
 
-Your ToT fieldbook will constitute your central scholarly activity during this semester. I call this assignment a "fieldbook" rather than a "journal" to convey its hybridity: week by week, your entries will include a mix of description, analysis, code, and figures or images. This ongoing assignment will give you the chance to organize the diverse tasks of the class' experiential work, practice the skills introduced in the labs and coding sessions, bring your experiential work into conversation with class readings and personal research, and experiment with ideas that will be further developed in your [Unessay projects](/assignments/unessay).
+To help accomplish this goal, you will maintain a fieldbook, which will constitute your central scholarly activity throughout this semester. I call this assignment a "fieldbook" rather than a "journal" to convey its hybridity: week by week, your entries will include a mix of description, analysis, code, figures, or images. This ongoing assignment will give you the chance to organize the diverse tasks of the class' experiential work, practice the skills introduced in the labs, bring your experiential work into conversation with class readings and personal research, and experiment with ideas that will be further developed in your [Unessay projects](/assignments/unessay). 
+
+There will be two types of entries in your fieldbooks: **class preparation** and **lab report**. 
+
+### Class Preparation Entries
+
+For most classes, you will be assigned articles or books to read, files to watch, or websites to browse prior to class. We will discuss strategies for attending closely to these texts throughout the class, but in general you should not skim. You should pay close attention, note interesting ideas, and ask questions. You will like some of our texts and dislike others, but you should engage them all; don't stop at "I like this" or "I don't like this." Instead, think about what the text is trying to say and how it's trying to say it. Think about the choices made by its creator—stylistic, tonal, ideological—and how those choices contribute to the text's success or failure. Compare one text with others, whether from our class, from your other classes, or from independent reading.
+
+In order to help you attend closely to our course texts and prepare for each class, you should prepare 1-2 paragraphs responding to each class' readings. I mean 1-2 paragraphs **in total**, *NOT* 1-2 paragraphs per reading. Your entries should synthesize and bring readings into conversation, and should focus on a few ideas you want to highlight rather than attempting to summarize everything in the readings. Your class prep fieldbook entries can make critical observations about the readings or they may ask questions. 
+
+You should draft each class prep fieldbook entry in its own `.md` file, following the naming convention outlined above, and commit it to your fieldbook repository prior to the pertinent class period. *To emphasize: each class preparation entry should be saved as a separate file in your Github repository.*
+
+In order for your class preparation fieldbook entries to be "Satisfactory," they should, in general:
+
+1. Get beyond basic questions or observations of fact and instead work toward questions or observations of significance. 
+2. Demonstrate close thought about the themes, style, arguments and other elements of our texts, as well as about the relationships among them. 
+3. Emerge from (and refer to) specific ideas, pages, quotations, scenes, &c. from our assigned texts rather than broad or generic concepts.
+4. Genuinely open toward discussion and debate during class (i.e. no leading the witness, your honor). 
+
+Reading responses will be deemed "Unsatisfactory" when they indicate lack of preparation or inattentive reading, and will have consequences as outlined in your grading contract.
+
+### Lab Report Entries
+
+Your lab report entries will vary quite a bit from lab to lab. I will often post a prompt for a lab to help start your thinking; you should begin your reports from these prompts. 
+
+There are a few elements I will expect to find in each lab report fieldbook entry:
+
+1. A description of the lab activities completed. Most of our experiential activities will include specific outcomes. You might produce a specific material product, such as a letterpress printed sheet, or be asked to adapt the lab's code to answer a new question. The first task of any fieldbook entry will be to demonstrate completion of these tasks. In the case of a coding session, you will likely integrate code snippets directly into your Markdown file (more on this as those labs approach). For other labs you may instead reference external proof of your work, such as photos.
+
+2. Prose that reflects analytically on the work of the lab, putting it into conversation with *one or two* readings *from the same week of class* as the lab. This prose need not be as formal as a research paper, but it should demonstrate careful thought and preparation. You should integrate the readings explicitly, if possible through direct quotation. Use this writing to experiment with intellectual pairings you think might be generative to your larger thinking and help you prepare for the class' Unessay projects.
 
 ### Organizing Your Fieldbook
 
-Your fieldbook will be, essentially, a folder comprising at least 9 `.md` files, perhaps including supplemental files such as images referenced in the documents. We'll work on setting this up in our first code session, so you don't need to understand precisely what this means right now. Your fieldbooks will be posted to the [Class Updates](/updates/) section of the course website.
+Your fieldbook will be a collection of Markdown or `.md` files collected in a [Github Repository](https://github.com/). We will learn how to write in Markdown and contribute to a Github repository during the first laboratory (which you will reflect on in your first lab report). You will share the address of your repository with me so that I can check your progress. I may also download particularly strong entries for reposting as [Model Student Fieldbooks](/updates/models/) on the class website.
 
-### Composition
+You should name your files following the following convention:
 
-Your fieldbook entries will vary quite a bit from lab to lab. However, there are a few elements I will expect in each entry:
+*For class preparation entries:*
 
-1. Completion of any lab-specific activities. Most of our experiential activities will include a specific set of outcomes. For example, I might ask you to reflect on a set of questions about your experiences or challenge you to adapt the day's code to solve some practice problems, or you might produce a specific material product such as a letterpress printed sheet. The first task of any fieldbook entry will be to demonstrate completion of these tasks. In the case of a coding session, you will likely integrate code snippets directly into the .RMD file (more on this as those labs approach). For other labs you may instead reference external proof of your work (and possibly submit that external evidence separately).
+`YYYY-MM-DD-classprep-WHAT-WORDS-YOU-WANT.md`
 
-2. Prose that both describes the work done and reflects analytically on that work. This prose need not be as formal as a research paper, but it should demonstrate careful thought and preparation. You should integrate our course readings into these reflections, often through direct quotation. Use your fieldbooks to explore ideas from the readings that you found particularly interesting, and especially ideas we did not have time to discuss in class. Use this writing to experiment with intellectual pairings you think might be generative to your larger thinking and help you prepare for the class' Unessay projects.
+*For lab reports:*
 
-3. Evidence of your experiential work, particularly for code entries. One reason we will produce some entries in R Markdown is that Markdown provides a way to integrate executable code with prose that comments and reflects on that code. You needn't include every snippet of code you attempted (though keep in mind "failed" code can be interesting as a subject of reflection). Instead, you should include the most enlightening or intellectual productive bits of code that help illustrate the larger ideas you are working through in your fieldbook.
+`YYYY-MM-DD-labreport-WHAT-WORDS-YOU-WANT.md`
 
-4. A header that will allow me to publish your fieldbook easily on the course website and makes clear precisely which lab activity a given entry records. We will go over this header in our first lab, but I've included a model below you can simply copy, paste, and modify. As an example, you might include the following lines at the top of each file (or each entry if you're using a single file), modified to suit the specifics of each week:
-    ``` 
-    ---
-    layout: page  
-    title: "Your TITLE HERE"  
-    author: "YOUR NAME or PSEUDONYM"  
-    categories:  
-        - fieldbooks
-    comments: false  
-    show_meta: true
-    header:
-        image_fullwidth: OPTIONAL-IMAGE-NAME.FILE-EXTENSION
-        caption: OPTIONAL CAPTION FOR IMAGE WITH CITATION
-        caption_url: OPTIONAL URL FOR IMAGE CITATION
-    ---
-    ```
-If your file does not include these fields I will ask you to revise it before I can consider the entry complete.
+#### Flexibility
 
-5. The filename must also follow a very specific convention in order to post correctly. Essentially, it lists the date (of submission) in Year, Month, Day format, followed by your last name (or pseudonym) and the lab number. Essentially, it should look like this: ```YYYY-MM-DD-NAME-LAB-NUMBER.md````.
+ToT is a challenging and full class. The semester will include thirteen chapters and eleven labs. To give you some flexibility, you will complete fieldbook entries as outlined in your course contract, which will mean there will be some class days for which you will not submit class preparation entries, and some labs for which you will not submit reports. 
 
-### Flexibility
+#### Pacing Your Field Work
 
-ToT is a challenging and full class. The semester will include 12 labs. To give you some flexibility, you must complete a fieldbook entry for 9/12 labs over the semester. You may complete more than 9 entries over the semester, so long as you continue to meet the guidelines for timing and submission outlined below. If you complete more than 9 entries, I will include only the strongest 9 in my grade book (meaning you can make up for a weaker submission). 
+Your fieldbook should be a developing record of your thinking about our class and its activities. Thus you should be working on it steadily, responding to the labs in a timely manner, in part to keep your thinking fresh and in part to avoid falling too far behind as new labs approach. 
 
-### Pacing Your Field Work
+Class preparation entries are due prior to the pertinent class, while lab report entries are due within one week of the lab session. If a particular lab session extends through multiple classes, its fieldbook entry is due within one week of the final classroom session devoted to it. You may not wait until late in the semester to complete fieldbook entries for activities earlier in the semester, and I will check your fieldbooks periodically to ensure you are working steadily. The coding labs, in particular, will build on each other and you will find it difficult to complete fieldbooks for later coding labs if you do not complete earlier ones. 
 
-Your fieldbook should be a developing record of your thinking about our class and its activities. Thus you should be working on it steadily, responding to the labs and code sessions in a timely manner, in part to keep your thinking fresh and in part to avoid falling too far behind as new labs and code sessions approach. 
-
-Unless otherwise noted, a fieldbook entry is due within 1 week of the associated lab session. If a particular lab session extends through multiple classes, its fieldbook entry is due within 1 week of the final classroom session devoted to it. You may not wait until late in the semester to complete fieldbook entries for activities earlier in the semester, and I will collect your fieldbooks periodically to ensure you are working steadily. The coding labs, in particular, will build on each other and you will find it difficult to complete fieldbooks for later coding labs if you do not complete earlier ones. 
-
-I regularly assign ongoing assignments in my classes and every semester I strongly urge students to start working early in order to complete the work. Each semester at least a few students ignore this urging, usually to their later dismay. Complications will almost certainly arise during the semester, and if you put off starting your fieldbook entries you will struggle to earn full credit on this assignment. In order to pressure you a bit toward responsibility: **you must complete at least 3 entries by President's Day, February 19**. I strongly recommend you complete more before this date, but I will not assess more than 5 entries completed after this date if at least 3 were not completed before. 
+I regularly assign ongoing assignments in my classes and every semester I strongly urge students to start working early in order to complete the work. Each semester at least a few students ignore this urging, usually to their later dismay. Complications will almost certainly arise during the semester, and if you put off starting your fieldbook entries you will struggle to earn full credit on this assignment. 
 
 ### Why Markdown?
 

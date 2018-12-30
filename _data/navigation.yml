@@ -18,25 +18,21 @@
   url: "/assignments/"
   side: left
   dropdown:
-  - title: "In-class Work"
-    url: "/assignments/inclasswork/"
   - title: "Fieldbook"
     url: "/assignments/fieldbook"
   - title: "Dead Media Poster"
     url: "/assignments/deadmediaposter/"
-  - title: "Unessays"
+  - title: "Unessay"
     url: "/assignments/unessay/"
 
 - title: Updates
   url: "/updates/archive/"
   side: right
   dropdown:
-  - title: "In-Class Assignments"
+  - title: "In-Class Work"
     url: "/updates/in-class/"
   - title: "Lab Assignments"
     url: "/updates/labs/"
-  - title: "Student Fieldbooks"
-    url: "/updates/fieldbooks/"
   - title: "Model Fieldbooks"
     url: "/updates/models/"
 

@@ -35,7 +35,7 @@ Really, all I *want* to write here can be found in Sonya Huber's [Shadow Syllabu
 + Professor: [Ryan Cordell](http://ryancordell.org)
 + Cordell Email: [r.cordell@northeastern.edu](mailto:r.cordell@northeastern.edu) 
 + Cordell Office: Nightingale Hall 415
-+ Cordell Office Hours: Wednesday 10-11, Friday 1:30-2:30, and by appointment
++ Cordell Office Hours: Wednesdays 2:30-4:00, Fridays 10-11, and by appointment
 
 -----
 
@@ -43,16 +43,16 @@ Really, all I *want* to write here can be found in Sonya Huber's [Shadow Syllabu
  
 The majority of our readings will be available online or through the library's Leganto system. We will read a few books, however, which you will need to purchase:
  
-+ James Gleick, [*The Information: A History, A Theory, A Flood*](http://amzn.to/2g3003b), Vintage (2012).
-+ Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage: The \(Mostly\) True Story of the First Computer*](http://amzn.to/2g311sc), Pantheon (2015).
-+ Emily St. John Mandel, [*Station Eleven*](http://amzn.to/2AHrUc9), Vintage (2015).
++ James Gleick, [*The Information: A History, A Theory, A Flood*](http://amzn.to/2g3003b), Vintage (2012)
++ Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage: The \(Mostly\) True Story of the First Computer*](http://amzn.to/2g311sc), Pantheon (2015)
++ Emily St. John Mandel, [*Station Eleven*](http://amzn.to/2AHrUc9), Vintage (2015)
 + Amaranth Borsuk, [*The Book*](https://amzn.to/2Ea7Gvc) (2018)
 
 -----
  
 # Communication
 
-The best way to get in touch with me is to visit during my office hours. If you’re unsure about our readings, struggling with an assignment, or just want to talk, please visit. During the Spring 2018 semester, I will be in my office (Nightingale 415) on Wednesday from 10-11am and Fridays from 1:30-2:30. I’m also happy to make appointments at other times—just [email me](mailto:r.cordell@northeastern.edu) with **at least three possible meeting times** for me to choose among. I can schedule in person or virtual meetings.
+The best way to get in touch with me is to visit during my office hours. If you’re unsure about our readings, struggling with an assignment, or just want to talk, please visit. During the Spring 2018 semester, I will be in my office (Nightingale 415) on Wednesdays 2:30-4:00 and Fridays 10-11. I’m also happy to make appointments at other times—just [email me](mailto:r.cordell@northeastern.edu) with **at least three possible meeting times** for me to choose among. I can schedule in person or virtual meetings.
 
 The next best way to get in touch with me is by [sending me an email](mailto:r.cordell@northeastern.edu). When you write to me: consider your tone and your audience. An email to your professor shouldn’t read the same as emails to friends or family. For help, see [this guide to emailing your professors](https://medium.com/@lportwoodstacer/how-to-email-your-professor-without-being-annoying-af-cf64ae0e4087). I will respond to an email within 48 hours. Often I will respond more quickly, but you should not send me an urgent email, for example, the night before an assignment is due. If for some reason I have not responded to your email within two days, please do follow up—my delay is likely inadvertent and I will welcome a reminder.
 
@@ -64,7 +64,11 @@ This experiential course requires active engagement in class activities and disc
 
 ## Participation
 
-I will not explicitly grade participation in this course (i.e. “participation = 20% of final grade”), but I will take account of your reading and course engagement through our in-class work, discussions, and related activities. [In-class work](http://s18tot.ryancordell.org/assignments/inclasswork/) will regularly be graded, while other contributions can influence that grade. There are many ways to participate in a college class. Just a few of the most valuable contributions are:
+I will not explicitly grade participation in this course (i.e. “participation = 20% of final grade”), but I will take account of your reading and course engagement through your [class preparation](/assignments/class-prep/), our discussions, and related activities. As a reminder, all of our class grading contracts require you to: 
+
+> Come to class prepared to discuss any assigned readings, games, videos, or other media. Participate actively in class activities and discussions, making observations and asking questions that help the class think together. 
+
+There are many ways to participate in a college class. Just a few of the most valuable contributions are:
 
 1. Raising ideas from our assigned materials for class discussion, including directing our attention to specific moments you found evocative, inspiring, infuriating, or otherwise salient;
 2. Asking questions about materials or ideas you found puzzling or difficult (I cannot overstate how valuable good questions are to a thriving class, and how desperately I wish more students were courageous in asking them);
@@ -86,9 +90,9 @@ If you fail to meet these requirements, I will consider you mentally absent, tho
 
 ## Missing Class
 
-You may miss two classes without penalty. *I make no distinction between excused and unexcused absences*, so use your allotted absences wisely. You may not miss two classes early in the semester and then petition for additional excused absences afterward. When you must miss class, it is your responsibility to find out what you missed, get updates on upcoming assignments, and/or ensure that you are prepared for future classes. *You may not make up quizzes or in-class work*. If you miss a lab due to an excused absence you should attempt to make up the work, but I cannot promise that all lab activities can be completed outside their schedule time; some labs require travel, special equipment, or outside expertise that I cannot provide at other times than our scheduled class period. 
+You may miss the number of classes specified in your chosen grade contract and you need not provide an explanation. If you find yourself in extraordinary circumstances that will impact your attendance, please come talk with me during office hours. When you must miss class, it is your responsibility to find out what you missed, get updates on upcoming assignments, and/or ensure that you are prepared for future classes. 
 
-Essentially, when you are absent you will receive a '0' for any in-class work assignments given on that day. At the end of the semester, I will drop the lowest two in-class grades, so that up to two 0's will be dropped (for your two allowed absences). Once beyond your allotted absences you will receive a zero for any in-class work or labs missed. If you miss fewer than two classes, then your lowest two in-class grades will be dropped, improving your overall grade.
+For as many absences as allotted in your grade contract, you will be exempted from the class preparation assignment. If you miss more classes than agreed, we may need to reevaluate your contract.
 
 [![A picture of two buttons, the first labeled "Overload Relay Trip and the second labeled "Overload Relay & M.G. Set](https://c2.staticflickr.com/8/7179/6824250814_34fcd25d62_o.jpg)](https://flic.kr/p/bp351N)
 
