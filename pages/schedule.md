@@ -142,6 +142,7 @@ Introducing the class
 + Sydney J. Shep, ["'Smiley, you’re on candid camera': Emoticons & Pre-Digital Networks"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242420001401?auth=SAML) (2011)
 + Chris Gayomali, ["How Typeface Influences the Way We Read and Think"](http://theweek.com/articles/463196/how-typeface-influences-way-read-think) (2013)
 + Lindsay Lynch, ["How I Came to Love the En Space"](http://www.theatlantic.com/technology/archive/2016/09/how-i-came-to-love-the-en-space/499337/) (2016)
++ Choose a font to research from the [Font Review Journal](http://fontreviewjournal.com/), [Typographica's Favorite Typefaces of 2017](https://typographica.org/features/our-favorite-typefaces-of-2017/), or the [Kern Your Enthusiasm series](http://hilobrow.com/tag/kern-enthusiasm/). Be ready to discuss it in class.
 
 ## Chapter Eight: Circulation
 
@@ -171,7 +172,7 @@ March 4-8
 
 # Book the Third &#9755; Read-Write-Execute
 
-## Chapter Nine: 
+## Chapter Nine: Algorithmical
 
 {% include alert info='[Lab #8: Building a Bot]()' %}
 
