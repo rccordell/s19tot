@@ -36,7 +36,6 @@ Our syllabus is divided into thematic books and organized by weekly "chapters," 
 
 -----
 
-
 # Book the First &#9755; (re)Mediation
 
 ## Chapter One: Media Messages
@@ -94,6 +93,8 @@ Introducing the class
 ### February 1
 
 {% include alert warning='DUE: [Dead Media Poster Presentations](/assignments/deadmediaposter/) in class February 1' %}
+
+-----
 
 # Book the Second &#9755; Impression
 
