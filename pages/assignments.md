@@ -8,7 +8,7 @@ header:
   caption_url: https://www.davidrumsey.com/luna/servlet/s/y763yx
 ---
 
-Technologies of Text will be assessed using a **contract grading system** (described below). The work of the class will be conducted across these four facets:
+Technologies of Text will be assessed using a **contract grading system** (described below). The work of the class will be conducted across these four assignments:
 
 <div class="row">
     <div class="small-6 columns">
@@ -53,7 +53,9 @@ Technologies of Text will be assessed using a **contract grading system** (descr
   
 # Grade Contracts
 
-In this course, you will determine the grade you receive by fulfilling a contract you will submit for my approval on the fourth day of class: **Friday, January 18th**. Your written contract will detail: 
+In this course, you will determine the grade you receive by fulfilling a contract you will submit for my approval on the fourth day of class: **Friday, January 18th**. 
+
+Your written contract will detail: 
 
 1. the requirements you will meet in order to receive the grade for which you've contracted, 
 2. the penalties you will incur for not meeting those requirements,
