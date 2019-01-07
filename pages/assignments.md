@@ -72,8 +72,8 @@ As you no doubt know, grading can be a contentious issue in college courses, par
 To fulfill **any** grade contract a student must do the following, which should nonetheless be specified in the contract submitted for approval. When writing self assessments students must describe how they have met these requirements in addition to the grade-specific requirements:
 
 1. Come to class prepared to discuss any assigned readings, videos, or other media. Participate actively in class activities and discussions, making observations and asking questions that help the class think together. 
-2. Complete interim self-assessments when requested during the semester demonstrating that you are on-track to meet the requirements agreed to in your grade contract. 
-3. Revise contractual assignments as necessary forboth you and I to consider them "Satisfactory."
+2. Meet with me in person—during office hours or another scheduled time—at least once around midterm—roughly between weeks 5-8—to ensure you are on-track to meet your contract requirements, discuss any questions or concerns you have about the course or your progress, and decide on any necessary contract amendments.
+3. Revise contractual assignments as necessary until both you and I consider them "Satisfactory."
 4. Complete a final self-assessment demonstrating that your work has met the agreed requirements, submitting it to Professor Cordell by 5pm on Wednesday, April 24.
 
 ### "A" Contract
