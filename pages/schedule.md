@@ -49,7 +49,7 @@ Introducing the class
 ## January 11
 
 + Marshall McLuhan, ["The Medium is the Message"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9006734890001401?auth=SAML) (1964)
-+ Lisa Gitelman, "Introduction: Media as Historical Subjects," from [*Always Already New: Media, History, and the Data of Culture*](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9006734700001401?auth=SAML) (MIT Press, 2006)
++ Lisa Gitelman, "Introduction: Media as Historical Subjects," (to the break on page 12) from [*Always Already New: Media, History, and the Data of Culture*](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9006734700001401?auth=SAML) (MIT Press, 2006)
 
 ## Chapter Two: Codex
 
