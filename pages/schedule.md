@@ -40,7 +40,7 @@ Our syllabus is divided into thematic books and organized by weekly "chapters," 
 
 ## Chapter One: Media Messages
 
-{% include alert info='[Lab #1: Mark(it all)down]()' %}
+{% include alert info='[Lab #1: Mark(it all)down](/labs/Lab1-Markdown/)' %}
 
 ## January 9
 
