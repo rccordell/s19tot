@@ -53,17 +53,17 @@ Introducing the class
 
 ## Chapter Two: Codex
 
-{% include alert alert='Meet in the Northeastern Archives & Special Collections, 92 Snell Library (in the basement) on January 18' %}
+{% include alert alert='Meet in the Northeastern Archives & Special Collections, 92 Snell Library (in the basement) on January 16' %}
 
-{% include alert info='[Lab #2: Codexical Thinking]()' %}
+{% include alert info='[Lab #2: Into the Archive]()' %}
 
 ### January 16 
 
-+ Amaranth Borsuk, “The Book as Object” from *The Book* (2018)
++ Bonnie Mak, ["Architectures of the Page"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9006739380001401?auth=SAML) (2011)
 
 ### January 18
 
-+ Bonnie Mak, ["Architectures of the Page"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9006739380001401?auth=SAML) (2011)
++ Amaranth Borsuk, “The Book as Object” from *The Book* (2018)
 
 ## Chapter Three: Manuscript
 
@@ -82,8 +82,6 @@ Introducing the class
 + (watch) Getty Museum, ["Making Manuscripts"](https://youtu.be/nuNfdHNTv9o) (6:19)
 
 ## Chapter Four: Literacy
-
-{% include alert info='[Lab #4: Building a Bot]()' %}
 
 ### January 30 
 
@@ -217,7 +215,7 @@ March 4-8
 
 ## Chapter Twelve: Book Futures
 
-{% include alert info='[Lab #11: TBA]()' %}
+{% include alert info='[Lab #11: Electronic Literature]()' %}
 
 ### April 3 
 

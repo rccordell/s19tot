@@ -1,16 +1,15 @@
 ## Introductions
 
 1. Who am I?
-2. Who is he (practicum student)?
-3. Who are you?
+2. Who are you?
+    + Name
+    + Pronouns
     + Year
     + Major
-    + Hobbies
+    + Hobby
     + What is this class?
 
 ## Harlequin Exercise
-
-
 
 ## Overview of Syllabus
 
