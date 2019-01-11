@@ -80,6 +80,7 @@ Introducing the class
 + Geoffrey Chaucer, ["Chaucer’s Words to His Scrivener"](http://genius.com/Geoffrey-chaucer-chaucers-words-to-his-scrivener-annotated) (ca. 1380)
 + Excerpts from Johannes Trithemius, [*In Praise of Scribes*](http://misc.yarinareth.net/trithemius.html) (1492)
 + (watch) Getty Museum, ["Making Manuscripts"](https://youtu.be/nuNfdHNTv9o) (6:19)
++ (optional, but new and incredibly cool) A. Radini *et al* ["Medieval women’s early involvement in manuscript production suggested by lapis lazuli identification in dental calculus"](http://advances.sciencemag.org/content/5/1/eaau7126)
 
 ## Chapter Four: Literacy
 
