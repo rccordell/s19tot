@@ -14,7 +14,7 @@ header:
 
 ## Lab Overview
 
-Your [fieldbook assignment](/assignments/fieldbook) constitutes the central, ongoing work of your semester where you will record your ideas about our readings in *class preparation* entries and think through the work of our humanities laboratories in *lab report* entries. You will gather all of these materials in a repository on [Github](https://github.com/). You will write using the Markdown syntax, which I describe below and which we will discuss in detail during today's laboratory.
+Your [fieldbook assignment](/assignments/fieldbook) constitutes the central, ongoing work of your semester where you will record your ideas about our readings in _class **preparation**_ entries and think through the work of our humanities laboratories in *lab report* entries. You will gather all of these materials in a repository on [Github](https://github.com/). You will write using the Markdown syntax, which I describe below and which we will discuss in detail during today's laboratory.
 
 ## Lab Report 1 Prompt
 
