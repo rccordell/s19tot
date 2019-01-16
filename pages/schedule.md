@@ -55,7 +55,7 @@ Introducing the class
 
 {% include alert alert='Meet in the Northeastern Archives & Special Collections, 92 Snell Library (in the basement) on January 16' %}
 
-{% include alert info='[Lab #2: Into the Archive]()' %}
+{% include alert info='[Lab #2: Into the Archive](/labs/IntoTheArchive/)' %}
 
 ### January 16 
 
@@ -67,7 +67,7 @@ Introducing the class
 
 ## Chapter Three: Manuscript
 
-{% include alert info='[Lab #3: Scriptorium]()' %}
+{% include alert info='[Lab #3: Illuminating the Book]()' %}
 
 ### January 23 
 
@@ -125,11 +125,10 @@ Introducing the class
 
 ## February 15
 
-+ Articles about the [Victoria Press](https://en.wikipedia.org/wiki/Victoria_Press)
-    + M. M. H., ["A Ramble with Mrs. Grundy: A Visit to the Victoria Printing Press,"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242280001401?auth=SAML) *English Woman's Journal* (1860)
-    + ["The Victoria Press,"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242330001401?auth=SAML) *Illustrated London News* (15 June 1861)
-    + Emily Faithfull, ["Women Compositors,"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242390001401?auth=SAML) *English Woman's Journal* (1861)
-+ Sarah Werner, ["Finding Women in the Printing Shop"](http://sarahwerner.net/blog/2014/10/finding-women-in-the-printing-shop/) (2014)
++ Sydney J. Shep, ["'Smiley, you’re on candid camera': Emoticons & Pre-Digital Networks"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242420001401?auth=SAML) (2011)
++ Chris Gayomali, ["How Typeface Influences the Way We Read and Think"](http://theweek.com/articles/463196/how-typeface-influences-way-read-think) (2013)
++ Lindsay Lynch, ["How I Came to Love the En Space"](http://www.theatlantic.com/technology/archive/2016/09/how-i-came-to-love-the-en-space/499337/) (2016)
++ Choose a font to research from the [Font Review Journal](http://fontreviewjournal.com/), [Typographica's Favorite Typefaces of 2017](https://typographica.org/features/our-favorite-typefaces-of-2017/), or the [Kern Your Enthusiasm series](http://hilobrow.com/tag/kern-enthusiasm/). Be ready to discuss it in class.
 
 ## Chapter Seven: Typecasting
 
@@ -139,10 +138,11 @@ Introducing the class
 
 ### February 22
 
-+ Sydney J. Shep, ["'Smiley, you’re on candid camera': Emoticons & Pre-Digital Networks"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242420001401?auth=SAML) (2011)
-+ Chris Gayomali, ["How Typeface Influences the Way We Read and Think"](http://theweek.com/articles/463196/how-typeface-influences-way-read-think) (2013)
-+ Lindsay Lynch, ["How I Came to Love the En Space"](http://www.theatlantic.com/technology/archive/2016/09/how-i-came-to-love-the-en-space/499337/) (2016)
-+ Choose a font to research from the [Font Review Journal](http://fontreviewjournal.com/), [Typographica's Favorite Typefaces of 2017](https://typographica.org/features/our-favorite-typefaces-of-2017/), or the [Kern Your Enthusiasm series](http://hilobrow.com/tag/kern-enthusiasm/). Be ready to discuss it in class.
++ Articles about the [Victoria Press](https://en.wikipedia.org/wiki/Victoria_Press)
+    + M. M. H., ["A Ramble with Mrs. Grundy: A Visit to the Victoria Printing Press,"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242280001401?auth=SAML) *English Woman's Journal* (1860)
+    + ["The Victoria Press,"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242330001401?auth=SAML) *Illustrated London News* (15 June 1861)
+    + Emily Faithfull, ["Women Compositors,"](https://northeastern.alma.exlibrisgroup.com/leganto/public/01NEU_INST/citation/9007242390001401?auth=SAML) *English Woman's Journal* (1861)
++ Sarah Werner, ["Finding Women in the Printing Shop"](http://sarahwerner.net/blog/2014/10/finding-women-in-the-printing-shop/) (2014)
 
 ## Chapter Eight: Circulation
 
@@ -184,6 +184,7 @@ March 4-8
 
 + Vikram Chandra, ["The Beauty of Code"](https://www.theparisreview.org/blog/2014/09/05/the-beauty-of-code/) (2014)
 + [Electronic Literature Collection: Bots](http://collection.eliterature.org/3/collection-bots.html)
++ Scott B. Weingart, ["The Route of a Text Message"](http://scottbot.net/the-route-of-a-text-message/) (2019)
 
 ## Chapter Ten: Text as Data
 
@@ -191,11 +192,11 @@ March 4-8
 
 ### March 20
 
-+ Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage:  The (Mostly) True Story of the First Computer*](http://amzn.to/2iPqWRY) (beginning-pg. 90)
++ Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage:  The (Mostly) True Story of the First Computer*](http://amzn.to/2iPqWRY) (2015), beginning-pg. 90
 
 ### March 22
 
-+ Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage:  The (Mostly) True Story of the First Computer*](http://amzn.to/2iPqWRY) (pg. 147-257)
++ Sydney Padua, [*The Thrilling Adventures of Lovelace and Babbage:  The (Mostly) True Story of the First Computer*](http://amzn.to/2iPqWRY) (2015), pg. 147-257
 
 ## Chapter Eleven: Obsolescence
 

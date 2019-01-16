@@ -12,7 +12,7 @@ header:
 
 + A [research poster](http://en.wikipedia.org/wiki/Poster_session) presented in class
 + Students should work together in pairs
-+ Due on February 13
++ Due on February 1
 + Claim your dead medium by [signing up here](https://docs.google.com/spreadsheets/d/15a3WE1KXldGapNUxqdwqY2Os48LxKhD2_N0NsgaOqPQ/edit?usp=sharing)
 
 ## Details:
@@ -41,4 +41,4 @@ You and your partner will prepare a conference-style poster to present your “d
 
 You should not attempt on your poster to tell us everything that you might say about your chosen medium in a written paper nor explain its every nuance. When designing think CONCISE, INFORMATIVE, and CREATIVE. Students often choose to create a model or interactive aspect to their poster to help their colleagues understand their medium. The idea here is that the form’s restriction (paradoxically) promotes your creativity, as some might argue the formal restrictions of certain poetic forms force the poet toward ever-more-deft feats of language. You will have ample opportunity during the poster session to share more details and anecdotes from your research than you can fit onto your poster itself.
 
-**We will hold our dead media poster session on Wednesday, February 13.**
+**We will hold our dead media poster session on Friday, February 11.**
