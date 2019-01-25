@@ -10,6 +10,8 @@ header:
   image_fullwidth: 4880254551_9a35151a0d_b-banner.jpg
   caption: Creative Commons licensed photograph, "Underwood," by Flickr user Canned Muffins
   caption_url: https://flic.kr/p/8rfzDR
+permalink: /labs/Lab2-Archive/
+
 ---
 
 > Whether thick, thin, brittle, smooth, dog-eared, or stained, every page discloses a unique identity that has been shaped by cultural forces over time. This identity is susceptible to change across different reading communities, but the material cues provided by the page perdure and are always present in the transmission of ideas. Designers make calculated decisions regarding the size, shape, colour, and quality of the material to suggest to readers what kind of page it is and how they wish it to be treated. Although a handwritten folio of animal skin in a medieval manuscript is as much a page as the leaf of a mass-produced paperback, the characteristics of each communicate vastly different messages about their respective manufacture, circulation, and cultural value. 

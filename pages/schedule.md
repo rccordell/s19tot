@@ -55,7 +55,7 @@ Introducing the class
 
 {% include alert alert='Meet in the Northeastern Archives & Special Collections, 92 Snell Library (in the basement) on January 16' %}
 
-{% include alert info='[Lab #2: Into the Archive](/labs/IntoTheArchive/)' %}
+{% include alert info='[Lab #2: Into the Archive](/labs/Lab2-Archive/)' %}
 
 ### January 16 
 
@@ -67,7 +67,7 @@ Introducing the class
 
 ## Chapter Three: Manuscript
 
-{% include alert info='[Lab #3: Illuminating the Book]()' %}
+{% include alert info='[Lab #3: Illuminating the Book](/labs/Lab3-Illuminating/)' %}
 
 ### January 23 
 
