@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "THE WRITTEN RULES"
 subheadline: "Class Prep"
 categories:

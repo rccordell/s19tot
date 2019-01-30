@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: MCLUHAN AND GITELMAN 
 subheadline: "Lab Report"
 categories:

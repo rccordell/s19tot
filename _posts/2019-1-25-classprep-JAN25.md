@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Class Preparation"
 subheadline: "25 Jan"
 categories:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "DECONSTRUCTING OUR DIGITAL LANDSCAPE"
 subheadline: "Lab Report"
 categories:
