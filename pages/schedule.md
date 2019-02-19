@@ -99,7 +99,7 @@ Introducing the class
 
 ## Chapter Five: Into the Matrix
 
-{% include alert info='[Lab #4: Letterpress I]()' %}
+{% include alert info='[Lab #4: Letterpress I](/labs/Lab4-LetterpressI/)' %}
 
 ### February 6
 
@@ -114,7 +114,7 @@ Introducing the class
 
 ## Chapter Six: Print Cultures
 
-{% include alert info='[Lab #5: Letterpress II]()' %}
+{% include alert info='[Lab #5: Letterpress II](/labs/Lab5-LetterpressII/)' %}
 
 {% include alert alert='Professor Cordell away on February 15 and 20. Virtual class on February 15' %}
 
