@@ -132,7 +132,7 @@ Introducing the class
 
 ## Chapter Seven: Typecasting
 
-{% include alert info='[Lab #6: Letterpress III]()' %}
+{% include alert info='[Lab #6: Letterpress III](/labs/Lab6-LetterpressIII/)' %}
 
 {% include alert alert='Professor Cordell away on February 15 and 20. No class on February 20' %}
 

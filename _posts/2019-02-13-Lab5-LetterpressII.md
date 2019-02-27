@@ -1,6 +1,6 @@
 ---
 layout: page
-subheadline: "Letterpress II: Creating the Job"
+subheadline: "Letterpress III: Pulling the Press"
 title: "Lab #5"
 categories:
     - labs
@@ -10,8 +10,8 @@ header:
   image_fullwidth: 4880254551_9a35151a0d_b-banner.jpg
   caption: Creative Commons licensed photograph, "Underwood," by Flickr user Canned Muffins
   caption_url: https://flic.kr/p/8rfzDR
-permalink: /labs/Lab5-LetterpressII/
+permalink: /labs/Lab6-LetterpressIII/
 
 ---
 
-For today's lab you may write an open response. Be sure to incorporate our readings—especially those from 2/15 we have yet to discuss together. Use this lab report to think through those readings a bit further than you were able to during your class prep, with a particular eye toward how they intersect with your experience setting up your print job. 
+In this final letterpress lab report, I want you to think about our work with type and the press in the context of our course's ongoing discussions of media, book history, and technology. How does physically working with this historical technology change your view of the handpress period and its texts? Think back to the books we have looked at in the archives or in Prof. Cordell's collections presented in class. How might your fuller, embodied understanding of how those books were created help you think about them anew? What new meanings might those media carry now that you better understand their means of production? Do the experiences of the past few weeks give you any new interpretive purchase when thinking about historical texts? 
