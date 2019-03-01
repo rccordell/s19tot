@@ -146,7 +146,7 @@ Introducing the class
 
 ## Chapter Eight: Circulation
 
-{% include alert info='[Lab #7: Bibliographical]()' %}
+{% include alert info='[Lab #7: Fit to Print](/labs/Lab7-FitToPrint/)' %}
 
 ### February 27
 
