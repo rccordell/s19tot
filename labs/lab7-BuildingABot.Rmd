@@ -9,6 +9,10 @@ output: html_document
 
 This version of my twitterbot assignment was adapted from [an original written in Python](https://www.dropbox.com/s/r1py3zazde2turk/Trendingmore.py?dl=0), which itself adapted code written by Mark Sample. That orginal bot tweeted (I've since stopped it) at [Quoth the Ravbot](https://twitter.com/Quoth__the). The current version owes much to advice and code borrowed from two colleagues at Northeastern University: Jonathan Fitzgerald and Benjamin Schmidt. 
 
+# Fieldbook Prompt
+
+
+
 # The (Very) Basics of Working in RStudio
 
 ## R Markdown
@@ -119,9 +123,39 @@ The examples below all use this stanza from Edgar Allan Poe's "The Raven," which
  Take thy beak from out my heart, and take thy form from off my door!” 
              Quoth the Raven “Nevermore.”
              
+## Create Substitution Lists
+
+One way to create mad-libs style poems is to create lists of words to draw from randomly. This same method could be used to create other kinds of combinatory poems as well, including those that combine set phrases or lines. One advantage of this method is that you could control the substitution possibilities to only include words with the correct syllable count, or words that rhyme, or so forth.
+
+```{r}
+nouns <- list("cow","anvil","flower","tuba","parsley")
+past_verbs <- list("extrapolated","devoured","hypothesized","exploded","cha-cha slid")
+interjections <- list("gadzooks!","zounds!","hogwash!","aaarrrggghhh!","achoo")
+```
+             
+Once we create those lists, we can use code like that below to substitute random words from the lists into the appropriate spots in a line of poetry. Run the first line to understand how the `paste` function works and the second to substitute three words from the lists above into a line of "The Raven." The results will print in your console.
+             
+```{r}
+
+paste(c("Quoth the Raven, ", as.character(sample(interjections,1))), collapse = "")
+
+paste(c(as.character(sample(past_verbs,1)), " the ", as.character(sample(nouns,1)), ", ", as.character(sample(interjections,1))), collapse = "")
+
+```
+             
+
+Okay, now it's your turn! Write a few lines of code to create lists of words for substitution. Remember your variable names can be anything, but the items in your lists must be surrounded by quotation marks (because they're character strings) and separated by commas *outside the quotation marks*! Once you've created a few lists from which to substitute, completed the `paste` to create a mad-lib line of poetry.
+
+```{r}
+
+paste(c(), collapse ="")
+
+```
+
+
 ## Application Programming Interfaces
 
-In order to complete this section, you’ll need to create a few accounts from which we’ll either be drawing or to which we’ll be adding content. Hopefully you already did this after my email before spring break:
+Next we will perform our substitutions in a different way, by drawing from the Wordnik online dictionary. In order to complete this section, you’ll need to create a few accounts from which we’ll either be drawing or to which we’ll be adding content. Hopefully you already did this after my email before spring break:
 
 + Sign up for [a Wordnik account](https://www.wordnik.com/signup) and then [sign up for a Wordnik API Key](http://developer.wordnik.com/). Wordnik is an open-source dictionary from which we will be drawing words to fill in our mad libs.
 
@@ -227,7 +261,22 @@ cat(poem)
 
 Mad Libs style bots like this one are only one possibility for using computational tools to remix cultural objects. I used similar methods to these to create [IshmaFML](https://twitter.com/IshmaFML) (sound it out) and [AhaBlessed](https://twitter.com/AhaBlessed), which mash up lines from *Moby Dick* with sections of tweets using the hashtags #fml and #blessed, respectively, to occasionally hilarious or even evocative results. Creative writers are doing even more interesting and innovative things using computational tools, which can be ludic and evocative, as well as statistical and analytical. For just one example, you might look to the work of a poet like [Nick Monfort](http://nickm.com/poems/) or some of the works in the [Electronic Literature Collection](http://collection.eliterature.org/3/). 
 
+Okay, below let's try writing code that creates a mashup using a poem of your choice. You can make lists, pull from Wordnik, or some combination of the two in order to create your new poems:
+
+```{r}
+
+
+
+
+
+
+```
+
+
+# Ending the session
+
 Now, as we end our work, let's be sure to close our sessions on RStudio Server:
+
 ```{r}
 q()
 ```
