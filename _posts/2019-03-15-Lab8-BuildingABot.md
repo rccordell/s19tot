@@ -1,7 +1,7 @@
 ---
 layout: page
-subheadline: "Letterpress III: Pulling the Press"
-title: "Lab #6"
+subheadline: "Building a Bot"
+title: "Lab #8"
 categories:
     - labs
 comments: false

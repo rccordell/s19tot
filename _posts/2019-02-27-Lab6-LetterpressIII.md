@@ -1,7 +1,7 @@
 ---
 layout: page
-subheadline: "All the News That's Fit to Print"
-title: "Lab #7"
+subheadline: "Letterpress III: Pulling the Press"
+title: "Lab #6"
 categories:
     - labs
 comments: false
