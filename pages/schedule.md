@@ -213,7 +213,7 @@ March 4-8
   + ["Ghosts in The Reels"](https://apps.sciencefriday.com/data/ghosts.html)
   + ["The Librarians Saving the Internet"](https://apps.sciencefriday.com/data/librarians.html)
   + ["Data Reawakening"](https://apps.sciencefriday.com/data/reawakening.html)
-+ Craig Mod, ["Future Reading"](https://aeon.co/essays/stagnant-and-dull-can-digital-books-ever-replace-print) (2015)
+<del>+ Craig Mod, ["Future Reading"](https://aeon.co/essays/stagnant-and-dull-can-digital-books-ever-replace-print) (2015)</del>
 
 ## Chapter Twelve: Book Futures
 
