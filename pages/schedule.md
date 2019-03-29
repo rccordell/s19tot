@@ -213,6 +213,7 @@ March 4-8
   + ["Ghosts in The Reels"](https://apps.sciencefriday.com/data/ghosts.html)
   + ["The Librarians Saving the Internet"](https://apps.sciencefriday.com/data/librarians.html)
   + ["Data Reawakening"](https://apps.sciencefriday.com/data/reawakening.html)
+
 <del>+ Craig Mod, ["Future Reading"](https://aeon.co/essays/stagnant-and-dull-can-digital-books-ever-replace-print) (2015)</del>
 
 ## Chapter Twelve: Book Futures
@@ -221,12 +222,18 @@ March 4-8
 
 ### April 3 
 
-+ Jon Bois, [“What Football Will Look Like in the Future”](https://www.sbnation.com/a/17776-football/) (2017)
-+ Amaranth Borsuk, “The Book as Idea” and “The Book as Interface” from *The Book* (2018)
++ Lauren J. Young, Daniel Peterschmidt, and Cat Frazier, "File Not Found Series" (2017)
+  + ["Ghosts in The Reels"](https://apps.sciencefriday.com/data/ghosts.html)
+  + ["The Librarians Saving the Internet"](https://apps.sciencefriday.com/data/librarians.html)
+  + ["Data Reawakening"](https://apps.sciencefriday.com/data/reawakening.html)
+
 
 ### April 5
 
-+ James Gleick, *The Information* (2011), chapters 14, 15, and epilogue
++ Jon Bois, [“What Football Will Look Like in the Future”](https://www.sbnation.com/a/17776-football/) (2017)
++ Amaranth Borsuk, “The Book as Idea” and “The Book as Interface” from *The Book* (2018)
+
+<del>+ James Gleick, *The Information* (2011), chapters 14, 15, and epilogue</del>
 
 ## Chapter Thirteen: Memory
 
